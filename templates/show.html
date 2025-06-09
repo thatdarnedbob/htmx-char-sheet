@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>{{ character.name }} {{ character.caste}}</h1>
+
+<div>
+    <div>Descriptor: {{ character.descriptor }}</div>
+    <div>Gift: {{ character.gift }}</div>
+</div>
+
+<p>
+    <a href="/characters/{{character.id}}/edit">Edit</a>
+    <a href="/characters">Back</a>
+</p>
+
+{% endblock %}

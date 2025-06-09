@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<form action="/characters/new" method="post">
+
+    <fieldset>
+        <legend>Character Values</legend>
+        <div class="table rows">
+            <p>
+                <label for="gift">Gift</label>
+                <input  name="gift" 
+                        id="gift" 
+                        type="text"
+                        placeholder="Gift" 
+                        value="{{ character.gift or '' }}">
+                <span class="error">{{ character.errors['gift'] }}</span>
+            </p>
+            <p>
+                <label for="name">Name</label>
+                <input  name="name"
+                        id="name"
+                        type="text"
+                        placeholder="Name"
+                        value="{{ character.name or ''}}">
+                <span class="error">{{ character.errors['name'] }}</span>
+            </p>
+            <p>
+                <label for="caste">Caste</label>
+                <input  name="caste"
+                        id="caste"
+                        type="text"
+                        placeholder="Caste"
+                        value="{{ character.caste or '' }}">
+                <span class="error">{{ character.errors['caste'] }}</span>
+            </p>
+            <p>
+                <label for="descriptor">Descriptor</label>
+                <input  name="descriptor"
+                        id="descriptor"
+                        type="text"
+                        placeholder="Descriptor"
+                        value="{{ character.descriptor or '' }}">
+                <span class="error">{{ character.errors['descriptor'] }}</span>
+            </p>
+        </div>
+        <button>Save</button>
+    </fieldset>
+
+</form>
+
+<p>
+    <a href="/characters">Back</a>
+</p>
+
+{% endblock %}

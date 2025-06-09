@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<form action="/characters" method="get" class="tool-bar">
+    <label for="search">Search Term</label>
+    <input id="search" type="search" name="q"
+        value="{{ request.args.get('q') or '' }}"/>
+    <input type="submit" value="Search">
+
+</form>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Caste</th>
+            <th>Descriptor</th>
+            <th>Gift</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for character in characters %}
+        <tr>
+            <td>{{ character.name }}</td>
+            <td>{{ character.caste }}</td>
+            <td>{{ character.descriptor }}</td>
+            <td>{{ character.gift }}</td>
+            <td>
+                <a href="/characters/{{ character.id }}/edit">Edit</a>
+                <a href="/characters/{{ character.id }}">View</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<p>
+    <a href="/characters/new">Create Character</a>
+</p>
+
+{% endblock %}
