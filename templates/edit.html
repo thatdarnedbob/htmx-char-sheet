@@ -21,18 +21,21 @@
                 <input  name="name"
                         id="name"
                         type="text"
-                        placeholder="Name Name"
-                        value="{{ character.name }}">
+                        hx-get="/characters/{{ character.id }}/name"
+                        hx-target="next .error"
+                        hx-trigger="change, keyup changed delay:250ms"
+                        placeholder="Name"
+                        value="{{ character.name or ''}}">
                 <span class="error">{{ character.errors['name'] }}</span>
             </p>
             <p>
                 <label for="caste">Caste</label>
-                <input  name="Caste"
-                        id="Caste"
+                <input  name="caste"
+                        id="caste"
                         type="text"
-                        placeholder="Caste"
-                        value="{{ character.Caste }}">
-                <span class="error">{{ character.errors['Caste'] }}</span>
+                        placeholder="caste"
+                        value="{{ character.caste }}">
+                <span class="error">{{ character.errors['caste'] }}</span>
             </p>
             <p>
                 <label for="descriptor">Descriptor</label>
@@ -47,12 +50,13 @@
     </fieldset>
 </form>
 
-<form action="/characters/{{ character.id }}/delete", method="post">
-    <button>Delete Character</button>
-</form>
+<button hx-delete="/characters/{{ character.id }}"
+        hx-push-url="true"
+        hx-confirm="Actually delete this character?"
+        hx-target="body"> Delete Character</button>
 
 <p>
-    <a href="/characters/">Back</a>
+    <a href="/characters">Back</a>
 </p>
 
 {% endblock %}

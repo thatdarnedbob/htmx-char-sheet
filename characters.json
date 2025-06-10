@@ -1,10 +1,3602 @@
 [
   {
     "id": 1,
-    "name": "Bob",
-    "caste": "The Builder",
-    "descriptor": "Tough, hirsute",
-    "gift": "Big ol natties",
+    "name": "Adagda",
+    "caste": "Warrior",
+    "descriptor": "A depraved warrior who boils",
+    "gift": "A Golden Dagger",
+    "errors": {}
+  },
+  {
+    "id": 2,
+    "name": "Abadxo",
+    "caste": "Priest",
+    "descriptor": "A heroic priest who sleeps",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 3,
+    "name": "Kobalor",
+    "caste": "Barbarian",
+    "descriptor": "A cruel barbarian who suffers",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 4,
+    "name": "Lorozzor",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who stews",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 5,
+    "name": "Ozxoag",
+    "caste": "Thief",
+    "descriptor": "A wise thief who stews",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 6,
+    "name": "Ozbatxo",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who sleeps",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 7,
+    "name": "Oxadgor",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who stews",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 8,
+    "name": "Adzorrat",
+    "caste": "Rogue",
+    "descriptor": "A wise rogue who stews",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 9,
+    "name": "Lordarat",
+    "caste": "Berzerker",
+    "descriptor": "A fierce berzerker who fights",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 10,
+    "name": "Batgorgad",
+    "caste": "Rogue",
+    "descriptor": "A strong rogue who suffers",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 11,
+    "name": "Ratdagad",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who boils",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 12,
+    "name": "Daratad",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who boils",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 13,
+    "name": "Ozbatlor",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who sleeps",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 14,
+    "name": "Aggadgor",
+    "caste": "Barbarian",
+    "descriptor": "A cunning barbarian who suffers",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 15,
+    "name": "Gadozab",
+    "caste": "Thief",
+    "descriptor": "A fierce thief who laughs",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 16,
+    "name": "Dalaklor",
+    "caste": "Cleric",
+    "descriptor": "A cunning cleric who laughs",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 17,
+    "name": "Adbako",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who fights",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 18,
+    "name": "Lakzorrat",
+    "caste": "Thief",
+    "descriptor": "A strong thief who boils",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 19,
+    "name": "Gadablak",
+    "caste": "Cleric",
+    "descriptor": "A heroic cleric who boils",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 20,
+    "name": "Abagrat",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who learns",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 21,
+    "name": "Ozdazor",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who fights",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 22,
+    "name": "Xoratlak",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who suffers",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 23,
+    "name": "Zorgorrat",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who boils",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 24,
+    "name": "Gadadox",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who learns",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 25,
+    "name": "Aggorox",
+    "caste": "Priest",
+    "descriptor": "A depraved priest who learns",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 26,
+    "name": "Dabaad",
+    "caste": "Priest",
+    "descriptor": "A depraved priest who sleeps",
+    "gift": "A Tiny Teapot",
+    "errors": {}
+  },
+  {
+    "id": 27,
+    "name": "Oxlaklor",
+    "caste": "Priest",
+    "descriptor": "A strong priest who learns",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 28,
+    "name": "Koratad",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who learns",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 29,
+    "name": "Zorozab",
+    "caste": "Barbarian",
+    "descriptor": "A strong barbarian who boils",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 30,
+    "name": "Gadxobat",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who learns",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 31,
+    "name": "Xogorox",
+    "caste": "Warrior",
+    "descriptor": "A smart warrior who boils",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 32,
+    "name": "Adaggad",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who laughs",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 33,
+    "name": "Oxbatgad",
+    "caste": "Wizard",
+    "descriptor": "A fierce wizard who learns",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 34,
+    "name": "Abkorat",
+    "caste": "Rogue",
+    "descriptor": "A cunning rogue who laughs",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 35,
+    "name": "Oxkoag",
+    "caste": "Rogue",
+    "descriptor": "A heroic rogue who fights",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 36,
+    "name": "Adbaxo",
+    "caste": "Wizard",
+    "descriptor": "A strong wizard who boils",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 37,
+    "name": "Oxlakgad",
+    "caste": "Barbarian",
+    "descriptor": "A heroic barbarian who boils",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 38,
+    "name": "Adgadab",
+    "caste": "Thief",
+    "descriptor": "A cunning thief who boils",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 39,
+    "name": "Adgadxo",
+    "caste": "Wizard",
+    "descriptor": "A fierce wizard who learns",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 40,
+    "name": "Gadzorlak",
+    "caste": "Barbarian",
+    "descriptor": "A cunning barbarian who fights",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 41,
+    "name": "Baratag",
+    "caste": "Wizard",
+    "descriptor": "A wise wizard who laughs",
+    "gift": "A Corroded Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 42,
+    "name": "Agoxko",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who laughs",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 43,
+    "name": "Dalorba",
+    "caste": "Cleric",
+    "descriptor": "A smart cleric who suffers",
+    "gift": "A Golden Dagger",
+    "errors": {}
+  },
+  {
+    "id": 44,
+    "name": "Balakab",
+    "caste": "Rogue",
+    "descriptor": "A wise rogue who laughs",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 45,
+    "name": "Bazorox",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who fights",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 46,
+    "name": "Dagadrat",
+    "caste": "Berzerker",
+    "descriptor": "A cruel berzerker who fights",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 47,
+    "name": "Baagda",
+    "caste": "Thief",
+    "descriptor": "A fierce thief who learns",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 48,
+    "name": "Ozdaba",
+    "caste": "Barbarian",
+    "descriptor": "A wise barbarian who laughs",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 49,
+    "name": "Xolorbat",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who laughs",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 50,
+    "name": "Lakgorba",
+    "caste": "Cleric",
+    "descriptor": "A cruel cleric who learns",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 51,
+    "name": "Gorkoox",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who laughs",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 52,
+    "name": "Abloroz",
+    "caste": "Priest",
+    "descriptor": "A heroic priest who stews",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 53,
+    "name": "Daxoox",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who learns",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 54,
+    "name": "Ratgoroz",
+    "caste": "Berzerker",
+    "descriptor": "A cruel berzerker who stews",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 55,
+    "name": "Lakoxko",
+    "caste": "Barbarian",
+    "descriptor": "A cruel barbarian who sleeps",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 56,
+    "name": "Bakogad",
+    "caste": "Berzerker",
+    "descriptor": "A wise berzerker who suffers",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 57,
+    "name": "Batxorat",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who boils",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 58,
+    "name": "Gadbatgor",
+    "caste": "Priest",
+    "descriptor": "A smart priest who stews",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 59,
+    "name": "Ozoxgor",
+    "caste": "Rogue",
+    "descriptor": "A wise rogue who suffers",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 60,
+    "name": "Daratlak",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who boils",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 61,
+    "name": "Lorkooz",
+    "caste": "Wizard",
+    "descriptor": "A wise wizard who fights",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 62,
+    "name": "Adgoroz",
+    "caste": "Wizard",
+    "descriptor": "A wise wizard who learns",
+    "gift": "A Brazen Crown",
+    "errors": {}
+  },
+  {
+    "id": 63,
+    "name": "Adbarat",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who sleeps",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 64,
+    "name": "Lakabbat",
+    "caste": "Cleric",
+    "descriptor": "A cunning cleric who sleeps",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 65,
+    "name": "Ratagad",
+    "caste": "Berzerker",
+    "descriptor": "A wise berzerker who boils",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 66,
+    "name": "Xozorlor",
+    "caste": "Barbarian",
+    "descriptor": "A cruel barbarian who stews",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 67,
+    "name": "Ozzorlak",
+    "caste": "Thief",
+    "descriptor": "A cunning thief who laughs",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 68,
+    "name": "Gorgadba",
+    "caste": "Cleric",
+    "descriptor": "A cruel cleric who stews",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 69,
+    "name": "Balakgad",
+    "caste": "Rogue",
+    "descriptor": "A cunning rogue who boils",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 70,
+    "name": "Oxadab",
+    "caste": "Barbarian",
+    "descriptor": "A strong barbarian who laughs",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 71,
+    "name": "Abbatrat",
+    "caste": "Berzerker",
+    "descriptor": "A smart berzerker who sleeps",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 72,
+    "name": "Zorbatad",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who laughs",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 73,
+    "name": "Baadrat",
+    "caste": "Thief",
+    "descriptor": "A depraved thief who fights",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 74,
+    "name": "Gadbatba",
+    "caste": "Cleric",
+    "descriptor": "A smart cleric who learns",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 75,
+    "name": "Ratgorko",
+    "caste": "Barbarian",
+    "descriptor": "A cunning barbarian who laughs",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 76,
+    "name": "Ozbatrat",
+    "caste": "Cleric",
+    "descriptor": "A cruel cleric who fights",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 77,
+    "name": "Lakaggor",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who learns",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 78,
+    "name": "Ozbalak",
+    "caste": "Wizard",
+    "descriptor": "A cruel wizard who learns",
+    "gift": "A Corroded Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 79,
+    "name": "Batdalor",
+    "caste": "Thief",
+    "descriptor": "A strong thief who boils",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 80,
+    "name": "Oxagda",
+    "caste": "Cleric",
+    "descriptor": "A depraved cleric who stews",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 81,
+    "name": "Adlorgor",
+    "caste": "Wizard",
+    "descriptor": "A wise wizard who boils",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 82,
+    "name": "Batkolak",
+    "caste": "Berzerker",
+    "descriptor": "A fierce berzerker who learns",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 83,
+    "name": "Batbaad",
+    "caste": "Rogue",
+    "descriptor": "A heroic rogue who sleeps",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 84,
+    "name": "Gorkolor",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who learns",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 85,
+    "name": "Balakko",
+    "caste": "Rogue",
+    "descriptor": "A cunning rogue who suffers",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 86,
+    "name": "Gadoxxo",
+    "caste": "Rogue",
+    "descriptor": "A cunning rogue who suffers",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 87,
+    "name": "Balorgor",
+    "caste": "Cleric",
+    "descriptor": "A cunning cleric who stews",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 88,
+    "name": "Baozlor",
+    "caste": "Cleric",
+    "descriptor": "A wise cleric who laughs",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 89,
+    "name": "Agkoab",
+    "caste": "Cleric",
+    "descriptor": "A depraved cleric who fights",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 90,
+    "name": "Lorozgor",
+    "caste": "Berzerker",
+    "descriptor": "A heroic berzerker who stews",
+    "gift": "A Corroded Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 91,
+    "name": "Baratlor",
+    "caste": "Thief",
+    "descriptor": "A cunning thief who laughs",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 92,
+    "name": "Xoadag",
+    "caste": "Rogue",
+    "descriptor": "A heroic rogue who boils",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 93,
+    "name": "Daadoz",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who sleeps",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 94,
+    "name": "Balakox",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who stews",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 95,
+    "name": "Zorratox",
+    "caste": "Wizard",
+    "descriptor": "A fierce wizard who suffers",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 96,
+    "name": "Ozaglor",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who boils",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 97,
+    "name": "Oxlakda",
+    "caste": "Barbarian",
+    "descriptor": "A fierce barbarian who sleeps",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 98,
+    "name": "Kooxlak",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who learns",
+    "gift": "A Corroded Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 99,
+    "name": "Kodagad",
+    "caste": "Rogue",
+    "descriptor": "A cunning rogue who fights",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 100,
+    "name": "Batxoba",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who laughs",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 101,
+    "name": "Adlakgad",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who suffers",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 102,
+    "name": "Agkolor",
+    "caste": "Priest",
+    "descriptor": "A heroic priest who sleeps",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 103,
+    "name": "Zorablor",
+    "caste": "Wizard",
+    "descriptor": "A strong wizard who sleeps",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 104,
+    "name": "Ozgorlor",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who boils",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 105,
+    "name": "Ozadlor",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who fights",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 106,
+    "name": "Zorkoab",
+    "caste": "Priest",
+    "descriptor": "A cruel priest who sleeps",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 107,
+    "name": "Oxxolor",
+    "caste": "Warrior",
+    "descriptor": "A fierce warrior who fights",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 108,
+    "name": "Lakgorxo",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who fights",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 109,
+    "name": "Bazorrat",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who laughs",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 110,
+    "name": "Zorratgad",
+    "caste": "Thief",
+    "descriptor": "A fierce thief who boils",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 111,
+    "name": "Ratabzor",
+    "caste": "Barbarian",
+    "descriptor": "A strong barbarian who learns",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 112,
+    "name": "Ozbako",
+    "caste": "Wizard",
+    "descriptor": "A strong wizard who suffers",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 113,
+    "name": "Badaag",
+    "caste": "Warrior",
+    "descriptor": "A smart warrior who suffers",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 114,
+    "name": "Zorbatox",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who fights",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 115,
+    "name": "Kobatox",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who laughs",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 116,
+    "name": "Lorgoroz",
+    "caste": "Priest",
+    "descriptor": "A wise priest who learns",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 117,
+    "name": "Ozlaklor",
+    "caste": "Barbarian",
+    "descriptor": "A fierce barbarian who stews",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 118,
+    "name": "Ozgadox",
+    "caste": "Rogue",
+    "descriptor": "A heroic rogue who stews",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 119,
+    "name": "Zorlakab",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who fights",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 120,
+    "name": "Agoxad",
+    "caste": "Thief",
+    "descriptor": "A wise thief who suffers",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 121,
+    "name": "Ratlorag",
+    "caste": "Rogue",
+    "descriptor": "A cunning rogue who sleeps",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 122,
+    "name": "Ratozba",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who sleeps",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 123,
+    "name": "Kobatda",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who sleeps",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 124,
+    "name": "Agozlak",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who boils",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 125,
+    "name": "Bakoab",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who sleeps",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 126,
+    "name": "Xogorda",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who learns",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 127,
+    "name": "Dagadba",
+    "caste": "Thief",
+    "descriptor": "A fierce thief who fights",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 128,
+    "name": "Zorozxo",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who stews",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 129,
+    "name": "Zoroxxo",
+    "caste": "Priest",
+    "descriptor": "A smart priest who suffers",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 130,
+    "name": "Abxoag",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who fights",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 131,
+    "name": "Batabgor",
+    "caste": "Rogue",
+    "descriptor": "A depraved rogue who laughs",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 132,
+    "name": "Lorlakox",
+    "caste": "Berzerker",
+    "descriptor": "A smart berzerker who boils",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 133,
+    "name": "Lakabxo",
+    "caste": "Cleric",
+    "descriptor": "A depraved cleric who suffers",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 134,
+    "name": "Abadox",
+    "caste": "Cleric",
+    "descriptor": "A cruel cleric who learns",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 135,
+    "name": "Xobaoz",
+    "caste": "Thief",
+    "descriptor": "A smart thief who fights",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 136,
+    "name": "Gorlorad",
+    "caste": "Barbarian",
+    "descriptor": "A cruel barbarian who boils",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 137,
+    "name": "Agratzor",
+    "caste": "Cleric",
+    "descriptor": "A wise cleric who stews",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 138,
+    "name": "Lakadox",
+    "caste": "Priest",
+    "descriptor": "A strong priest who sleeps",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 139,
+    "name": "Gadadag",
+    "caste": "Rogue",
+    "descriptor": "A depraved rogue who fights",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 140,
+    "name": "Dalakad",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who stews",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 141,
+    "name": "Batbalor",
+    "caste": "Berzerker",
+    "descriptor": "A cunning berzerker who suffers",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 142,
+    "name": "Abzorba",
+    "caste": "Rogue",
+    "descriptor": "A cunning rogue who suffers",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 143,
+    "name": "Agadoz",
+    "caste": "Wizard",
+    "descriptor": "A smart wizard who stews",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 144,
+    "name": "Gordarat",
+    "caste": "Cleric",
+    "descriptor": "A strong cleric who stews",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 145,
+    "name": "Agdako",
+    "caste": "Cleric",
+    "descriptor": "A depraved cleric who suffers",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 146,
+    "name": "Zorlorda",
+    "caste": "Priest",
+    "descriptor": "A strong priest who fights",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 147,
+    "name": "Agoxgad",
+    "caste": "Cleric",
+    "descriptor": "A heroic cleric who boils",
+    "gift": "A Corroded Teapot",
+    "errors": {}
+  },
+  {
+    "id": 148,
+    "name": "Abxoko",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who sleeps",
+    "gift": "A Corroded Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 149,
+    "name": "Xoadox",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who fights",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 150,
+    "name": "Gadratlor",
+    "caste": "Berzerker",
+    "descriptor": "A cunning berzerker who fights",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 151,
+    "name": "Ratxooz",
+    "caste": "Barbarian",
+    "descriptor": "A wise barbarian who boils",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 152,
+    "name": "Oxbatrat",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who suffers",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 153,
+    "name": "Batagxo",
+    "caste": "Priest",
+    "descriptor": "A fierce priest who learns",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 154,
+    "name": "Dagorlor",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who stews",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 155,
+    "name": "Baratgad",
+    "caste": "Rogue",
+    "descriptor": "A depraved rogue who suffers",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 156,
+    "name": "Ozxogad",
+    "caste": "Cleric",
+    "descriptor": "A strong cleric who learns",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 157,
+    "name": "Xobatrat",
+    "caste": "Berzerker",
+    "descriptor": "A cruel berzerker who laughs",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 158,
+    "name": "Xogadlak",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who sleeps",
+    "gift": "A Tiny Teapot",
+    "errors": {}
+  },
+  {
+    "id": 159,
+    "name": "Bakoag",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who fights",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 160,
+    "name": "Kobaad",
+    "caste": "Rogue",
+    "descriptor": "A depraved rogue who stews",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 161,
+    "name": "Agratlor",
+    "caste": "Priest",
+    "descriptor": "A fierce priest who learns",
+    "gift": "A Corroded Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 162,
+    "name": "Zorbagad",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who sleeps",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 163,
+    "name": "Adbatab",
+    "caste": "Priest",
+    "descriptor": "A wise priest who fights",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 164,
+    "name": "Baozbat",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who suffers",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 165,
+    "name": "Baabgad",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who learns",
+    "gift": "A Tiny Teapot",
+    "errors": {}
+  },
+  {
+    "id": 166,
+    "name": "Gadlorzor",
+    "caste": "Thief",
+    "descriptor": "A smart thief who boils",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 167,
+    "name": "Gadlakbat",
+    "caste": "Cleric",
+    "descriptor": "A strong cleric who laughs",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 168,
+    "name": "Zorxolak",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who boils",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 169,
+    "name": "Goraglak",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who laughs",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 170,
+    "name": "Kobatab",
+    "caste": "Thief",
+    "descriptor": "A depraved thief who learns",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 171,
+    "name": "Ratbaox",
+    "caste": "Barbarian",
+    "descriptor": "A cruel barbarian who laughs",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 172,
+    "name": "Batlorgor",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who suffers",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 173,
+    "name": "Lorozab",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who learns",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 174,
+    "name": "Loraglak",
+    "caste": "Cleric",
+    "descriptor": "A depraved cleric who stews",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 175,
+    "name": "Gorbaag",
+    "caste": "Wizard",
+    "descriptor": "A smart wizard who sleeps",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 176,
+    "name": "Abgadbat",
+    "caste": "Cleric",
+    "descriptor": "A wise cleric who sleeps",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 177,
+    "name": "Badaox",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who learns",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 178,
+    "name": "Lakbagor",
+    "caste": "Priest",
+    "descriptor": "A wise priest who sleeps",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 179,
+    "name": "Lorbalak",
+    "caste": "Cleric",
+    "descriptor": "A cruel cleric who sleeps",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 180,
+    "name": "Lordaox",
+    "caste": "Wizard",
+    "descriptor": "A cruel wizard who boils",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 181,
+    "name": "Xoaggad",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who suffers",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 182,
+    "name": "Ozgorab",
+    "caste": "Warrior",
+    "descriptor": "A depraved warrior who stews",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 183,
+    "name": "Dalorox",
+    "caste": "Priest",
+    "descriptor": "A cruel priest who fights",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 184,
+    "name": "Xokozor",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who learns",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 185,
+    "name": "Batdagor",
+    "caste": "Priest",
+    "descriptor": "A strong priest who stews",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 186,
+    "name": "Agaboz",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who fights",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 187,
+    "name": "Lorxorat",
+    "caste": "Wizard",
+    "descriptor": "A smart wizard who stews",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 188,
+    "name": "Aglorzor",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who boils",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 189,
+    "name": "Lakaggad",
+    "caste": "Berzerker",
+    "descriptor": "A depraved berzerker who boils",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 190,
+    "name": "Lakxogor",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who sleeps",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 191,
+    "name": "Batoxag",
+    "caste": "Cleric",
+    "descriptor": "A smart cleric who fights",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 192,
+    "name": "Kozorag",
+    "caste": "Cleric",
+    "descriptor": "A cunning cleric who sleeps",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 193,
+    "name": "Adbatgad",
+    "caste": "Wizard",
+    "descriptor": "A wise wizard who stews",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 194,
+    "name": "Dalorgor",
+    "caste": "Cleric",
+    "descriptor": "A smart cleric who sleeps",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 195,
+    "name": "Ratzoroz",
+    "caste": "Warrior",
+    "descriptor": "A fierce warrior who stews",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 196,
+    "name": "Adoxlor",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who learns",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 197,
+    "name": "Oxbaoz",
+    "caste": "Warrior",
+    "descriptor": "A heroic warrior who boils",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 198,
+    "name": "Aggorad",
+    "caste": "Rogue",
+    "descriptor": "A heroic rogue who laughs",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 199,
+    "name": "Lakdaoz",
+    "caste": "Warrior",
+    "descriptor": "A smart warrior who learns",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 200,
+    "name": "Aglorlak",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who stews",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 201,
+    "name": "Batbako",
+    "caste": "Berzerker",
+    "descriptor": "A depraved berzerker who suffers",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 202,
+    "name": "Zorlakgad",
+    "caste": "Priest",
+    "descriptor": "A smart priest who laughs",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 203,
+    "name": "Adratlak",
+    "caste": "Priest",
+    "descriptor": "A wise priest who learns",
+    "gift": "A Tiny Teapot",
+    "errors": {}
+  },
+  {
+    "id": 204,
+    "name": "Abozbat",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who sleeps",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 205,
+    "name": "Agbaad",
+    "caste": "Cleric",
+    "descriptor": "A strong cleric who sleeps",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 206,
+    "name": "Ozoxad",
+    "caste": "Barbarian",
+    "descriptor": "A cruel barbarian who laughs",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 207,
+    "name": "Gadzorda",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who stews",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 208,
+    "name": "Abagxo",
+    "caste": "Barbarian",
+    "descriptor": "A wise barbarian who learns",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 209,
+    "name": "Kooxrat",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who boils",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 210,
+    "name": "Abozox",
+    "caste": "Cleric",
+    "descriptor": "A heroic cleric who suffers",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 211,
+    "name": "Ozadab",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who boils",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 212,
+    "name": "Agzorgor",
+    "caste": "Thief",
+    "descriptor": "A strong thief who stews",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 213,
+    "name": "Gaddaoz",
+    "caste": "Warrior",
+    "descriptor": "A heroic warrior who suffers",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 214,
+    "name": "Xokobat",
+    "caste": "Priest",
+    "descriptor": "A cruel priest who suffers",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 215,
+    "name": "Gorbabat",
+    "caste": "Thief",
+    "descriptor": "A strong thief who sleeps",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 216,
+    "name": "Goraglor",
+    "caste": "Cleric",
+    "descriptor": "A wise cleric who laughs",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 217,
+    "name": "Adzorxo",
+    "caste": "Priest",
+    "descriptor": "A cruel priest who laughs",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 218,
+    "name": "Baozko",
+    "caste": "Cleric",
+    "descriptor": "A strong cleric who learns",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 219,
+    "name": "Oxgadko",
+    "caste": "Berzerker",
+    "descriptor": "A fierce berzerker who stews",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 220,
+    "name": "Agoxda",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who stews",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 221,
+    "name": "Gorbatab",
+    "caste": "Cleric",
+    "descriptor": "A strong cleric who learns",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 222,
+    "name": "Abzorag",
+    "caste": "Priest",
+    "descriptor": "A strong priest who sleeps",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 223,
+    "name": "Ozoxda",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who sleeps",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 224,
+    "name": "Kooxag",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who laughs",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 225,
+    "name": "Dalakgor",
+    "caste": "Barbarian",
+    "descriptor": "A heroic barbarian who learns",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 226,
+    "name": "Gadkooz",
+    "caste": "Thief",
+    "descriptor": "A fierce thief who boils",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 227,
+    "name": "Ratagxo",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who stews",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 228,
+    "name": "Zorkoxo",
+    "caste": "Priest",
+    "descriptor": "A heroic priest who learns",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 229,
+    "name": "Goraggad",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who stews",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 230,
+    "name": "Abratox",
+    "caste": "Wizard",
+    "descriptor": "A smart wizard who fights",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 231,
+    "name": "Agzorko",
+    "caste": "Cleric",
+    "descriptor": "A heroic cleric who fights",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 232,
+    "name": "Ozkoox",
+    "caste": "Warrior",
+    "descriptor": "A fierce warrior who suffers",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 233,
+    "name": "Batkoad",
+    "caste": "Rogue",
+    "descriptor": "A heroic rogue who boils",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 234,
+    "name": "Abdaag",
+    "caste": "Wizard",
+    "descriptor": "A cunning wizard who fights",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 235,
+    "name": "Lakadag",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who stews",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 236,
+    "name": "Lakdarat",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who laughs",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 237,
+    "name": "Abgorag",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who suffers",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 238,
+    "name": "Agratgad",
+    "caste": "Priest",
+    "descriptor": "A fierce priest who laughs",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 239,
+    "name": "Balakzor",
+    "caste": "Wizard",
+    "descriptor": "A wise wizard who sleeps",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 240,
+    "name": "Abratbat",
+    "caste": "Wizard",
+    "descriptor": "A strong wizard who learns",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 241,
+    "name": "Kozorab",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who laughs",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 242,
+    "name": "Dabatba",
+    "caste": "Berzerker",
+    "descriptor": "A depraved berzerker who suffers",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 243,
+    "name": "Gorgadlak",
+    "caste": "Barbarian",
+    "descriptor": "A heroic barbarian who fights",
+    "gift": "A Brazen Crown",
+    "errors": {}
+  },
+  {
+    "id": 244,
+    "name": "Adbatko",
+    "caste": "Wizard",
+    "descriptor": "A cruel wizard who sleeps",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 245,
+    "name": "Gorzoroz",
+    "caste": "Berzerker",
+    "descriptor": "A wise berzerker who fights",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 246,
+    "name": "Ratbatgor",
+    "caste": "Berzerker",
+    "descriptor": "A wise berzerker who fights",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 247,
+    "name": "Daxoab",
+    "caste": "Priest",
+    "descriptor": "A fierce priest who suffers",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 248,
+    "name": "Ratgadad",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who learns",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 249,
+    "name": "Lorxoko",
+    "caste": "Berzerker",
+    "descriptor": "A cunning berzerker who boils",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 250,
+    "name": "Ablakba",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who suffers",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 251,
+    "name": "Lakagox",
+    "caste": "Berzerker",
+    "descriptor": "A cunning berzerker who boils",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 252,
+    "name": "Ratbatxo",
+    "caste": "Priest",
+    "descriptor": "A heroic priest who suffers",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 253,
+    "name": "Gadaboz",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who stews",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 254,
+    "name": "Oxzorlor",
+    "caste": "Cleric",
+    "descriptor": "A heroic cleric who learns",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 255,
+    "name": "Xodaag",
+    "caste": "Wizard",
+    "descriptor": "A fierce wizard who fights",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 256,
+    "name": "Agbaoz",
+    "caste": "Cleric",
+    "descriptor": "A depraved cleric who stews",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 257,
+    "name": "Ratlorzor",
+    "caste": "Warrior",
+    "descriptor": "A depraved warrior who boils",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 258,
+    "name": "Zorxobat",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who suffers",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 259,
+    "name": "Daoxgor",
+    "caste": "Thief",
+    "descriptor": "A smart thief who suffers",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 260,
+    "name": "Gadagad",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who laughs",
+    "gift": "A Golden Dagger",
+    "errors": {}
+  },
+  {
+    "id": 261,
+    "name": "Loroxgor",
+    "caste": "Wizard",
+    "descriptor": "A cruel wizard who learns",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 262,
+    "name": "Baablak",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who suffers",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 263,
+    "name": "Oxgoroz",
+    "caste": "Priest",
+    "descriptor": "A wise priest who laughs",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 264,
+    "name": "Gorratko",
+    "caste": "Priest",
+    "descriptor": "A wise priest who boils",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 265,
+    "name": "Ratadlor",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who boils",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 266,
+    "name": "Gorablak",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who boils",
+    "gift": "A Tiny Teapot",
+    "errors": {}
+  },
+  {
+    "id": 267,
+    "name": "Xokooz",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who learns",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 268,
+    "name": "Batozgor",
+    "caste": "Thief",
+    "descriptor": "A smart thief who learns",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 269,
+    "name": "Gorzorba",
+    "caste": "Priest",
+    "descriptor": "A depraved priest who laughs",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 270,
+    "name": "Dagorad",
+    "caste": "Rogue",
+    "descriptor": "A strong rogue who suffers",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 271,
+    "name": "Abzorxo",
+    "caste": "Barbarian",
+    "descriptor": "A fierce barbarian who sleeps",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 272,
+    "name": "Bagorxo",
+    "caste": "Warrior",
+    "descriptor": "A smart warrior who stews",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 273,
+    "name": "Bazorag",
+    "caste": "Barbarian",
+    "descriptor": "A fierce barbarian who boils",
+    "gift": "A Golden Dagger",
+    "errors": {}
+  },
+  {
+    "id": 274,
+    "name": "Lorbatrat",
+    "caste": "Thief",
+    "descriptor": "A smart thief who stews",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 275,
+    "name": "Xoadab",
+    "caste": "Cleric",
+    "descriptor": "A heroic cleric who learns",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 276,
+    "name": "Daabrat",
+    "caste": "Berzerker",
+    "descriptor": "A smart berzerker who learns",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 277,
+    "name": "Balorox",
+    "caste": "Thief",
+    "descriptor": "A cunning thief who fights",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 278,
+    "name": "Goroxko",
+    "caste": "Berzerker",
+    "descriptor": "A cruel berzerker who stews",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 279,
+    "name": "Abratag",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who fights",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 280,
+    "name": "Goradox",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who fights",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 281,
+    "name": "Oxbaad",
+    "caste": "Priest",
+    "descriptor": "A smart priest who sleeps",
+    "gift": "A Golden Dagger",
+    "errors": {}
+  },
+  {
+    "id": 282,
+    "name": "Ozlakbat",
+    "caste": "Barbarian",
+    "descriptor": "A cruel barbarian who laughs",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 283,
+    "name": "Daoxzor",
+    "caste": "Warrior",
+    "descriptor": "A fierce warrior who boils",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 284,
+    "name": "Batlorzor",
+    "caste": "Cleric",
+    "descriptor": "A smart cleric who boils",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 285,
+    "name": "Xobatlor",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who stews",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 286,
+    "name": "Agzorlak",
+    "caste": "Thief",
+    "descriptor": "A cunning thief who fights",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 287,
+    "name": "Lakkooz",
+    "caste": "Barbarian",
+    "descriptor": "A strong barbarian who suffers",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 288,
+    "name": "Goraboz",
+    "caste": "Wizard",
+    "descriptor": "A cunning wizard who fights",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 289,
+    "name": "Aggadxo",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who boils",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 290,
+    "name": "Kolorzor",
+    "caste": "Wizard",
+    "descriptor": "A fierce wizard who fights",
+    "gift": "A Corroded Teapot",
+    "errors": {}
+  },
+  {
+    "id": 291,
+    "name": "Abdako",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who laughs",
+    "gift": "A Brazen Crown",
+    "errors": {}
+  },
+  {
+    "id": 292,
+    "name": "Ozoxgad",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who learns",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 293,
+    "name": "Zorratag",
+    "caste": "Thief",
+    "descriptor": "A wise thief who boils",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 294,
+    "name": "Zorlorgad",
+    "caste": "Rogue",
+    "descriptor": "A depraved rogue who fights",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 295,
+    "name": "Oxbabat",
+    "caste": "Wizard",
+    "descriptor": "A fierce wizard who stews",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 296,
+    "name": "Oxxogad",
+    "caste": "Cleric",
+    "descriptor": "A strong cleric who stews",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 297,
+    "name": "Ablaklor",
+    "caste": "Wizard",
+    "descriptor": "A strong wizard who stews",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 298,
+    "name": "Lorlakgor",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who laughs",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 299,
+    "name": "Gorkoba",
+    "caste": "Barbarian",
+    "descriptor": "A wise barbarian who sleeps",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 300,
+    "name": "Daxogor",
+    "caste": "Barbarian",
+    "descriptor": "A cunning barbarian who fights",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 301,
+    "name": "Badazor",
+    "caste": "Warrior",
+    "descriptor": "A fierce warrior who boils",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 302,
+    "name": "Ozlakzor",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who suffers",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 303,
+    "name": "Abgorba",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who stews",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 304,
+    "name": "Adkoda",
+    "caste": "Rogue",
+    "descriptor": "A heroic rogue who stews",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 305,
+    "name": "Batozba",
+    "caste": "Warrior",
+    "descriptor": "A depraved warrior who stews",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 306,
+    "name": "Gadkolak",
+    "caste": "Warrior",
+    "descriptor": "A depraved warrior who suffers",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 307,
+    "name": "Oxkoda",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who stews",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 308,
+    "name": "Agdarat",
+    "caste": "Warrior",
+    "descriptor": "A cunning warrior who stews",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 309,
+    "name": "Oxxoko",
+    "caste": "Berzerker",
+    "descriptor": "A smart berzerker who learns",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 310,
+    "name": "Ratlakgad",
+    "caste": "Rogue",
+    "descriptor": "A strong rogue who stews",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 311,
+    "name": "Ozgadab",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who fights",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 312,
+    "name": "Agkolak",
+    "caste": "Berzerker",
+    "descriptor": "A smart berzerker who fights",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 313,
+    "name": "Lordaad",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who learns",
+    "gift": "A Tiny Teapot",
+    "errors": {}
+  },
+  {
+    "id": 314,
+    "name": "Baxolor",
+    "caste": "Thief",
+    "descriptor": "A strong thief who fights",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 315,
+    "name": "Lorkoox",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who boils",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 316,
+    "name": "Daagba",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who boils",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 317,
+    "name": "Batgadox",
+    "caste": "Rogue",
+    "descriptor": "A wise rogue who boils",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 318,
+    "name": "Xozorad",
+    "caste": "Priest",
+    "descriptor": "A heroic priest who fights",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 319,
+    "name": "Agbalak",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who learns",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 320,
+    "name": "Adratda",
+    "caste": "Warrior",
+    "descriptor": "A fierce warrior who suffers",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 321,
+    "name": "Ratdabat",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who sleeps",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 322,
+    "name": "Gorgadko",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who learns",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 323,
+    "name": "Gaddaox",
+    "caste": "Wizard",
+    "descriptor": "A cunning wizard who laughs",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 324,
+    "name": "Oxdazor",
+    "caste": "Barbarian",
+    "descriptor": "A heroic barbarian who laughs",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 325,
+    "name": "Lakadba",
+    "caste": "Wizard",
+    "descriptor": "A strong wizard who sleeps",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 326,
+    "name": "Oxratlor",
+    "caste": "Wizard",
+    "descriptor": "A wise wizard who laughs",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 327,
+    "name": "Koozad",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who sleeps",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 328,
+    "name": "Batxolor",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who fights",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 329,
+    "name": "Ozagab",
+    "caste": "Berzerker",
+    "descriptor": "A fierce berzerker who learns",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 330,
+    "name": "Daozxo",
+    "caste": "Warrior",
+    "descriptor": "A heroic warrior who suffers",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 331,
+    "name": "Adgorda",
+    "caste": "Wizard",
+    "descriptor": "A cruel wizard who boils",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 332,
+    "name": "Xozoroz",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who laughs",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 333,
+    "name": "Oxlorbat",
+    "caste": "Priest",
+    "descriptor": "A smart priest who stews",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 334,
+    "name": "Zorbaoz",
+    "caste": "Cleric",
+    "descriptor": "A cruel cleric who laughs",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 335,
+    "name": "Laklorbat",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who sleeps",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 336,
+    "name": "Bagadlak",
+    "caste": "Thief",
+    "descriptor": "A strong thief who sleeps",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 337,
+    "name": "Batagrat",
+    "caste": "Berzerker",
+    "descriptor": "A fierce berzerker who stews",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 338,
+    "name": "Loroxgad",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who laughs",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 339,
+    "name": "Kolorba",
+    "caste": "Warrior",
+    "descriptor": "A cunning warrior who suffers",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 340,
+    "name": "Batagzor",
+    "caste": "Berzerker",
+    "descriptor": "A cunning berzerker who suffers",
+    "gift": "A Corroded Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 341,
+    "name": "Koadag",
+    "caste": "Cleric",
+    "descriptor": "A strong cleric who boils",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 342,
+    "name": "Dalakab",
+    "caste": "Thief",
+    "descriptor": "A depraved thief who suffers",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 343,
+    "name": "Zoragko",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who sleeps",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 344,
+    "name": "Agbatrat",
+    "caste": "Berzerker",
+    "descriptor": "A smart berzerker who boils",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 345,
+    "name": "Lakagzor",
+    "caste": "Priest",
+    "descriptor": "A fierce priest who learns",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 346,
+    "name": "Daadbat",
+    "caste": "Barbarian",
+    "descriptor": "A smart barbarian who sleeps",
+    "gift": "A Brazen Sword",
+    "errors": {}
+  },
+  {
+    "id": 347,
+    "name": "Xogadlor",
+    "caste": "Berzerker",
+    "descriptor": "A heroic berzerker who sleeps",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 348,
+    "name": "Batabad",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who sleeps",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 349,
+    "name": "Bagadag",
+    "caste": "Berzerker",
+    "descriptor": "A wise berzerker who fights",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 350,
+    "name": "Oxbatda",
+    "caste": "Thief",
+    "descriptor": "A depraved thief who stews",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 351,
+    "name": "Batgadag",
+    "caste": "Thief",
+    "descriptor": "A strong thief who learns",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 352,
+    "name": "Ratdaxo",
+    "caste": "Thief",
+    "descriptor": "A cruel thief who fights",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 353,
+    "name": "Bazorab",
+    "caste": "Cleric",
+    "descriptor": "A heroic cleric who laughs",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 354,
+    "name": "Lorbatda",
+    "caste": "Thief",
+    "descriptor": "A depraved thief who suffers",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 355,
+    "name": "Ozgadko",
+    "caste": "Priest",
+    "descriptor": "A wise priest who stews",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 356,
+    "name": "Adbaag",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who laughs",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 357,
+    "name": "Xokoab",
+    "caste": "Thief",
+    "descriptor": "A cunning thief who laughs",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 358,
+    "name": "Zoroxlor",
+    "caste": "Barbarian",
+    "descriptor": "A fierce barbarian who stews",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 359,
+    "name": "Adbaoz",
+    "caste": "Cleric",
+    "descriptor": "A cunning cleric who stews",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 360,
+    "name": "Xokorat",
+    "caste": "Priest",
+    "descriptor": "A wise priest who suffers",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 361,
+    "name": "Adaglak",
+    "caste": "Barbarian",
+    "descriptor": "A cunning barbarian who suffers",
+    "gift": "A Tiny Teapot",
+    "errors": {}
+  },
+  {
+    "id": 362,
+    "name": "Batoxko",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who suffers",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 363,
+    "name": "Xoratad",
+    "caste": "Barbarian",
+    "descriptor": "A heroic barbarian who boils",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 364,
+    "name": "Ablorda",
+    "caste": "Wizard",
+    "descriptor": "A heroic wizard who sleeps",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 365,
+    "name": "Oxgorag",
+    "caste": "Warrior",
+    "descriptor": "A fierce warrior who laughs",
+    "gift": "A Brazen Teapot",
+    "errors": {}
+  },
+  {
+    "id": 366,
+    "name": "Xozorgad",
+    "caste": "Cleric",
+    "descriptor": "A depraved cleric who stews",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 367,
+    "name": "Ratlakad",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who suffers",
+    "gift": "A Brazen Crown",
+    "errors": {}
+  },
+  {
+    "id": 368,
+    "name": "Goradbat",
+    "caste": "Berzerker",
+    "descriptor": "A fierce berzerker who fights",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 369,
+    "name": "Gadlorox",
+    "caste": "Barbarian",
+    "descriptor": "A strong barbarian who stews",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 370,
+    "name": "Gorozko",
+    "caste": "Barbarian",
+    "descriptor": "A wise barbarian who fights",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 371,
+    "name": "Xoagab",
+    "caste": "Berzerker",
+    "descriptor": "A heroic berzerker who suffers",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 372,
+    "name": "Adxolak",
+    "caste": "Barbarian",
+    "descriptor": "A fierce barbarian who stews",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 373,
+    "name": "Ozadox",
+    "caste": "Thief",
+    "descriptor": "A smart thief who fights",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 374,
+    "name": "Xobatgor",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who stews",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 375,
+    "name": "Ratozgad",
+    "caste": "Thief",
+    "descriptor": "A fierce thief who boils",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 376,
+    "name": "Lakkobat",
+    "caste": "Priest",
+    "descriptor": "A smart priest who suffers",
+    "gift": "A Corroded Teapot",
+    "errors": {}
+  },
+  {
+    "id": 377,
+    "name": "Ozbatgad",
+    "caste": "Wizard",
+    "descriptor": "A depraved wizard who stews",
+    "gift": "A Silver Sword",
+    "errors": {}
+  },
+  {
+    "id": 378,
+    "name": "Dazorgad",
+    "caste": "Wizard",
+    "descriptor": "A cunning wizard who suffers",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 379,
+    "name": "Agbatko",
+    "caste": "Barbarian",
+    "descriptor": "A cruel barbarian who sleeps",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 380,
+    "name": "Xogadrat",
+    "caste": "Thief",
+    "descriptor": "A strong thief who fights",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 381,
+    "name": "Ratkoad",
+    "caste": "Priest",
+    "descriptor": "A heroic priest who learns",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 382,
+    "name": "Ozgorko",
+    "caste": "Priest",
+    "descriptor": "A cunning priest who stews",
+    "gift": "A Silver Teapot",
+    "errors": {}
+  },
+  {
+    "id": 383,
+    "name": "Ratozlak",
+    "caste": "Priest",
+    "descriptor": "A wise priest who laughs",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 384,
+    "name": "Lorzorko",
+    "caste": "Berzerker",
+    "descriptor": "A fierce berzerker who stews",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 385,
+    "name": "Ozadlak",
+    "caste": "Berzerker",
+    "descriptor": "A smart berzerker who suffers",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 386,
+    "name": "Batadxo",
+    "caste": "Thief",
+    "descriptor": "A cunning thief who boils",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 387,
+    "name": "Zorbatlor",
+    "caste": "Rogue",
+    "descriptor": "A heroic rogue who fights",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 388,
+    "name": "Lakbako",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who sleeps",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 389,
+    "name": "Baloroz",
+    "caste": "Thief",
+    "descriptor": "A strong thief who fights",
+    "gift": "A Corroded Teapot",
+    "errors": {}
+  },
+  {
+    "id": 390,
+    "name": "Aggadox",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who learns",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 391,
+    "name": "Batxoab",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who sleeps",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 392,
+    "name": "Lakdaox",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who sleeps",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 393,
+    "name": "Adkoab",
+    "caste": "Wizard",
+    "descriptor": "A fierce wizard who boils",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 394,
+    "name": "Agdazor",
+    "caste": "Thief",
+    "descriptor": "A strong thief who stews",
+    "gift": "A Brazen Crown",
+    "errors": {}
+  },
+  {
+    "id": 395,
+    "name": "Batratgad",
+    "caste": "Warrior",
+    "descriptor": "A heroic warrior who fights",
+    "gift": "A Corroded Teapot",
+    "errors": {}
+  },
+  {
+    "id": 396,
+    "name": "Batgorko",
+    "caste": "Cleric",
+    "descriptor": "A cruel cleric who fights",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 397,
+    "name": "Xolorad",
+    "caste": "Barbarian",
+    "descriptor": "A cunning barbarian who laughs",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 398,
+    "name": "Gadabko",
+    "caste": "Wizard",
+    "descriptor": "A strong wizard who stews",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 399,
+    "name": "Aglakox",
+    "caste": "Warrior",
+    "descriptor": "A fierce warrior who boils",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 400,
+    "name": "Koxozor",
+    "caste": "Wizard",
+    "descriptor": "A smart wizard who boils",
+    "gift": "A Golden Sword",
+    "errors": {}
+  },
+  {
+    "id": 401,
+    "name": "Kogadag",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who learns",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 402,
+    "name": "Batratox",
+    "caste": "Warrior",
+    "descriptor": "A smart warrior who stews",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 403,
+    "name": "Ratabgad",
+    "caste": "Wizard",
+    "descriptor": "A cruel wizard who laughs",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 404,
+    "name": "Lakbalor",
+    "caste": "Warrior",
+    "descriptor": "A heroic warrior who laughs",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 405,
+    "name": "Lorablak",
+    "caste": "Cleric",
+    "descriptor": "A fierce cleric who stews",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 406,
+    "name": "Agkoox",
+    "caste": "Berzerker",
+    "descriptor": "A wise berzerker who suffers",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 407,
+    "name": "Zorbatba",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who suffers",
+    "gift": "A Enormous Coin",
+    "errors": {}
+  },
+  {
+    "id": 408,
+    "name": "Abbatzor",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who suffers",
+    "gift": "A Tiny Dagger",
+    "errors": {}
+  },
+  {
+    "id": 409,
+    "name": "Ablakko",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who suffers",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 410,
+    "name": "Lorbatox",
+    "caste": "Priest",
+    "descriptor": "A wise priest who learns",
+    "gift": "A Corroded Teapot",
+    "errors": {}
+  },
+  {
+    "id": 411,
+    "name": "Ozgadbat",
+    "caste": "Thief",
+    "descriptor": "A fierce thief who sleeps",
+    "gift": "A Enormous Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 412,
+    "name": "Ozratox",
+    "caste": "Thief",
+    "descriptor": "A wise thief who boils",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 413,
+    "name": "Bakolor",
+    "caste": "Berzerker",
+    "descriptor": "A wise berzerker who boils",
+    "gift": "A Tiny Coin",
+    "errors": {}
+  },
+  {
+    "id": 414,
+    "name": "Baablor",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who fights",
+    "gift": "A Silver Coin",
+    "errors": {}
+  },
+  {
+    "id": 415,
+    "name": "Batoxab",
+    "caste": "Rogue",
+    "descriptor": "A fierce rogue who suffers",
+    "gift": "A Enormous Teapot",
+    "errors": {}
+  },
+  {
+    "id": 416,
+    "name": "Oxabrat",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who fights",
+    "gift": "A Brazen Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 417,
+    "name": "Lorabbat",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who sleeps",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 418,
+    "name": "Gorxoox",
+    "caste": "Wizard",
+    "descriptor": "A fierce wizard who learns",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 419,
+    "name": "Ratlakgor",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who learns",
+    "gift": "A Corroded Teapot",
+    "errors": {}
+  },
+  {
+    "id": 420,
+    "name": "Ablakda",
+    "caste": "Berzerker",
+    "descriptor": "A smart berzerker who boils",
+    "gift": "A Tiny Sword",
+    "errors": {}
+  },
+  {
+    "id": 421,
+    "name": "Zorgorxo",
+    "caste": "Thief",
+    "descriptor": "A heroic thief who fights",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 422,
+    "name": "Agratab",
+    "caste": "Warrior",
+    "descriptor": "A cruel warrior who boils",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 423,
+    "name": "Ozxozor",
+    "caste": "Barbarian",
+    "descriptor": "A heroic barbarian who boils",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 424,
+    "name": "Lakkoag",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who stews",
+    "gift": "A Silver Crown",
+    "errors": {}
+  },
+  {
+    "id": 425,
+    "name": "Ratgorda",
+    "caste": "Cleric",
+    "descriptor": "A smart cleric who suffers",
+    "gift": "A Silver Dagger",
+    "errors": {}
+  },
+  {
+    "id": 426,
+    "name": "Agzorad",
+    "caste": "Priest",
+    "descriptor": "A smart priest who learns",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 427,
+    "name": "Oxlorko",
+    "caste": "Cleric",
+    "descriptor": "A heroic cleric who fights",
+    "gift": "A Corroded Dagger",
+    "errors": {}
+  },
+  {
+    "id": 428,
+    "name": "Lorozbat",
+    "caste": "Priest",
+    "descriptor": "A cruel priest who learns",
+    "gift": "A Golden Crown",
+    "errors": {}
+  },
+  {
+    "id": 429,
+    "name": "Koxogad",
+    "caste": "Rogue",
+    "descriptor": "A cruel rogue who sleeps",
+    "gift": "A Enormous Crown",
+    "errors": {}
+  },
+  {
+    "id": 430,
+    "name": "Aglorbat",
+    "caste": "Barbarian",
+    "descriptor": "A depraved barbarian who sleeps",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 431,
+    "name": "Xogadzor",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who suffers",
+    "gift": "A Corroded Teapot",
+    "errors": {}
+  },
+  {
+    "id": 432,
+    "name": "Lakoxlor",
+    "caste": "Priest",
+    "descriptor": "A wise priest who sleeps",
+    "gift": "A Enormous Sword",
+    "errors": {}
+  },
+  {
+    "id": 433,
+    "name": "Ratadbat",
+    "caste": "Thief",
+    "descriptor": "A depraved thief who boils",
+    "gift": "A Tiny Crown",
+    "errors": {}
+  },
+  {
+    "id": 434,
+    "name": "Lakkoda",
+    "caste": "Barbarian",
+    "descriptor": "A strong barbarian who learns",
+    "gift": "A Enormous Dagger",
+    "errors": {}
+  },
+  {
+    "id": 435,
+    "name": "Gadgorda",
+    "caste": "Thief",
+    "descriptor": "A depraved thief who fights",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 436,
+    "name": "Batlorko",
+    "caste": "Cleric",
+    "descriptor": "A wise cleric who stews",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 437,
+    "name": "Ratzorbat",
+    "caste": "Thief",
+    "descriptor": "A wise thief who fights",
+    "gift": "A Tiny Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 438,
+    "name": "Lakoxgad",
+    "caste": "Priest",
+    "descriptor": "A strong priest who suffers",
+    "gift": "A Brazen Coin",
+    "errors": {}
+  },
+  {
+    "id": 439,
+    "name": "Bagorox",
+    "caste": "Barbarian",
+    "descriptor": "A strong barbarian who fights",
+    "gift": "A Corroded Sword",
+    "errors": {}
+  },
+  {
+    "id": 440,
+    "name": "Oxabag",
+    "caste": "Warrior",
+    "descriptor": "A strong warrior who boils",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 441,
+    "name": "Kozorda",
+    "caste": "Thief",
+    "descriptor": "A wise thief who sleeps",
+    "gift": "A Brazen Crown",
+    "errors": {}
+  },
+  {
+    "id": 442,
+    "name": "Adlorba",
+    "caste": "Warrior",
+    "descriptor": "A depraved warrior who boils",
+    "gift": "A Brazen Dagger",
+    "errors": {}
+  },
+  {
+    "id": 443,
+    "name": "Kozorlor",
+    "caste": "Priest",
+    "descriptor": "A strong priest who fights",
+    "gift": "A Silver Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 444,
+    "name": "Agbatba",
+    "caste": "Thief",
+    "descriptor": "A smart thief who laughs",
+    "gift": "A Golden Breastplate",
+    "errors": {}
+  },
+  {
+    "id": 445,
+    "name": "Baabzor",
+    "caste": "Rogue",
+    "descriptor": "A smart rogue who suffers",
+    "gift": "A Golden Teapot",
+    "errors": {}
+  },
+  {
+    "id": 446,
+    "name": "Gadlorbat",
+    "caste": "Wizard",
+    "descriptor": "A smart wizard who laughs",
+    "gift": "A Corroded Crown",
+    "errors": {}
+  },
+  {
+    "id": 447,
+    "name": "Adbazor",
+    "caste": "Thief",
+    "descriptor": "A fierce thief who learns",
+    "gift": "A Corroded Coin",
+    "errors": {}
+  },
+  {
+    "id": 448,
+    "name": "Xoabko",
+    "caste": "Wizard",
+    "descriptor": "A strong wizard who stews",
+    "gift": "A Golden Coin",
+    "errors": {}
+  },
+  {
+    "id": 449,
+    "name": "Koabxo",
+    "caste": "Berzerker",
+    "descriptor": "A strong berzerker who suffers",
+    "gift": "A Golden Dagger",
+    "errors": {}
+  },
+  {
+    "id": 450,
+    "name": "Abbazor",
+    "caste": "Warrior",
+    "descriptor": "A wise warrior who stews",
+    "gift": "A Brazen Teapot",
     "errors": {}
   }
 ]

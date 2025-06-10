@@ -1,6 +1,6 @@
 import json
 
-PAGE_SIZE = 100
+PAGE_SIZE = 10
 
 class Character:
 
@@ -38,14 +38,15 @@ class Character:
         self.gift = gift
 
     def validate(self):
-        if not self.gift:
-            self.errors['gift'] = "Gift Required"
+        self.errors = {}
+        if not self.name:
+            self.errors['name'] = "Name Required"
         existing_character = next(filter(
-                lambda c: c.id != self.id and c.gift == self.gift,
+                lambda c: c.id != self.id and c.name == self.name,
                 Character.db.values()),
             None)
         if existing_character:
-            self.errors['gift'] = "Gift Must Be Unique"
+            self.errors['name'] = "Name Must Be Unique"
         return len(self.errors) == 0
     
     @classmethod
@@ -76,19 +77,15 @@ class Character:
 
     @classmethod
     def load_db(cls):
-        print("loading")
         with open("characters.json", "r") as character_file:
-            print("file open")
             characters = json.load(character_file)
             cls.db.clear()
             for c in characters:
-                print(c)
                 cls.db[c['id']] = Character(c['id'], 
                                             c['name'], 
                                             c['caste'], 
                                             c['descriptor'], 
                                             c['gift'])
-        print("file complete")
 
     @staticmethod
     def save_db():

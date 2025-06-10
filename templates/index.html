@@ -7,8 +7,9 @@
     <input id="search" type="search" name="q"
         value="{{ request.args.get('q') or '' }}"/>
     <input type="submit" value="Search">
-
 </form>
+
+
 <table>
     <thead>
         <tr>
@@ -32,8 +33,22 @@
             </td>
         </tr>
         {% endfor %}
+        {% if characters|length == 10 %}
+            <tr>
+                <td colspan="5" style="text-align: center">
+                    <button hx-target="closest tr"
+                            hx-swap="outerHTML"
+                            hx-select="tbody > tr"
+                            hx-get="/characters?page={{ page + 1 }}">
+                        Load More
+                    </button>
+                </td>
+            </tr>
+        {% endif %}
     </tbody>
 </table>
+
+
 
 <p>
     <a href="/characters/new">Create Character</a>

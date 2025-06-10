@@ -20,6 +20,9 @@
                 <input  name="name"
                         id="name"
                         type="text"
+                        hx-get="/characters/new/name"
+                        hx-target="next .error"
+                        hx-trigger="keyup changed delay:250ms"
                         placeholder="Name"
                         value="{{ character.name or ''}}">
                 <span class="error">{{ character.errors['name'] }}</span>
