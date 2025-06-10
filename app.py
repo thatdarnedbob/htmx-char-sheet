@@ -1,6 +1,8 @@
 from flask import flash, Flask, redirect, render_template, request
 from character_model import Character
 
+Character.load_db()
+
 app = Flask(__name__)
 
 with open("secretkey.txt", "r") as f:

@@ -74,6 +74,22 @@ class Character:
                 results.append(c)
         return results
 
+    @classmethod
+    def load_db(cls):
+        print("loading")
+        with open("characters.json", "r") as character_file:
+            print("file open")
+            characters = json.load(character_file)
+            cls.db.clear()
+            for c in characters:
+                print(c)
+                cls.db[c['id']] = Character(c['id'], 
+                                            c['name'], 
+                                            c['caste'], 
+                                            c['descriptor'], 
+                                            c['gift'])
+        print("file complete")
+
     @staticmethod
     def save_db():
         out_arr = [c.__dict__ for c in Character.db.values()]
