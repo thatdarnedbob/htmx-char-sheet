@@ -1,59 +1,60 @@
 from character_model import Character
 import random
 
+NUM_OCCUPATIONS = 108
 NUM_CHARACTERS = 450
+OCCUPATION_OFFSET = 27
+OO = OCCUPATION_OFFSET
 
-NAME_PHONEMES = ['ab', 'ad', 'ag', 'ko', 'lor', 'lak', 'bat', 'zor', 'xo', 'ox', 'oz', 'ba', 'da', 'gad', 'rat', 'gor']
+secret_text = ''
 
-CASTES = ['Warrior', 'Wizard', 'Rogue', 'Thief', 'Barbarian', 'Berzerker', 'Cleric', 'Priest']
-
-ADJS = ['Strong', 'Fierce', 'Wise', 'Smart', 'Cunning', 'Depraved', 'Cruel', 'Heroic']
-
-VERBS = ['Fights', 'Suffers', 'Laughs', 'Learns', 'Boils', 'Stews', 'Sleeps']
-
-ITEM_ADJS = ['Golden', 'Silver', 'Brazen', 'Enormous', 'Tiny', 'Corroded']
-
-ITEM_NOUNS = ['Teapot', 'Sword', 'Crown', 'Breastplate', 'Dagger', 'Coin']
+with open('eb.txt', 'r') as f:
+    secret_text = f.readlines()
 
 def randomCharacter():
-    caste = randomCaste()
-    c = Character(  name=randomName(),
-                    caste=caste,
-                    descriptor=randomDescriptor(caste),
-                    gift=randomGift())
+    o_num = random.randrange(NUM_OCCUPATIONS)
+    c = Character(  name=grabName(o_num),
+                    occupation=grabOccupation(o_num),
+                    debt=grabDebt(o_num),
+                    inventory=grabInventory(o_num),
+                    oddity_1=grabOddity1(o_num),
+                    oddity_2=grabOddity2(o_num),
+                    player="TEST")
+
     return c
 
-def randomName():
-    return ''.join(random.sample(NAME_PHONEMES, 3)).capitalize()
+def grabName(base):
+    names = secret_text[base * OO + 3].split(': ', maxsplit=1)[1]
+    names = names.rstrip('.')
+    names = names.split(', ')
+    return random.choice(names).capitalize().rstrip()
 
-def randomCaste():
-    return random.choice(CASTES)
+def grabOccupation(base):
+    return [secret_text[base * OO].split('. ', maxsplit=1)[1].rstrip(),
+            secret_text[base * OO + 1].rstrip()]
+    
+def grabDebt(base):
+    return secret_text[base * OO + 6].rstrip().split(': ', maxsplit=1)
 
-def randomDescriptor(caste):
-    return f"A {randomAdj()} {caste} who {randomVerb()}".capitalize()
+def grabInventory(base):
+    return secret_text[base * OO + 9].rstrip()
 
-def randomAdj():
-    return random.choice(ADJS)
+def grabOddity1(base):
+    choice = random.randrange(6)
+    return [secret_text[base * OO + 11].rstrip(),
+            secret_text[base * OO + 12 + choice][3:].rstrip()]
 
-def randomVerb():
-    return random.choice(VERBS)
-
-def randomGift():
-    return f"A {randomItemAdj()} {randomItemNoun()}"
-
-def randomItemAdj():
-    return random.choice(ITEM_ADJS)
-
-def randomItemNoun():
-    return random.choice(ITEM_NOUNS)
-
+def grabOddity2(base):
+    choice = random.randrange(6)
+    return [secret_text[base * OO + 19].rstrip(),
+            secret_text[base * OO + 20 + choice][4:].rstrip()]
 
 Character.db.clear()
 
 for i in range(NUM_CHARACTERS):
     r = randomCharacter()
-    while not r.validate():
-        r.name = randomName()
+    if not r.validate():
+        raise Exception(r.errors)
     r.save()
 
 Character.save_db()

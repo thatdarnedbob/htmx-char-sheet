@@ -2,11 +2,18 @@
 
 {% block content %}
 
-<h1>{{ character.name }} {{ character.caste}}</h1>
-
+<h1>{{ character.name }} {{ character.occupation[0] }}</h1>
+<h2>{{ character.occupation[1] }}</h2>
 <div>
-    <div>Descriptor: {{ character.descriptor }}</div>
-    <div>Gift: {{ character.gift }}</div>
+    <h4>{{ character.oddity_1[0] }}</h4>
+    <div>{{ character.oddity_1[1] }}</div>
+</div>
+<div>
+    <h4>{{ character.oddity_2[0] }}</h4>
+    <div>{{ character.oddity_2[1] }}</div>
+</div>
+<div>
+    <div>{{ character.inventory }}</div>
 </div>
 
 <p>
