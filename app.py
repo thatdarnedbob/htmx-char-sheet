@@ -20,6 +20,8 @@ def characters():
     page = int(request.args.get("page", 1))
     if search_term is not None:
         characters_set = Character.search(search_term)
+        if request.headers.get('HX-Trigger') == 'search':
+            return render_template('partials/rows.html', characters=characters_set, page=page)
     else:
         characters_set = Character.all(page)
     return render_template("index.html", characters=characters_set, page=page)

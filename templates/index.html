@@ -1,14 +1,21 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<p>
+    <a href="/characters/new">Create Character</a>
+</p>
 
 <form action="/characters" method="get" class="tool-bar">
     <label for="search">Search Term</label>
-    <input id="search" type="search" name="q"
-        value="{{ request.args.get('q') or '' }}"/>
-    <input type="submit" value="Search">
+    <input  id="search" 
+            type="search" 
+            name="q"
+            value="{{ request.args.get('q') or '' }}"
+            hx-get="/characters"
+            hx-trigger="search, keyup delay:200ms changed"
+            hx-target="tbody"/>
+    <input type="submit" value="Search"/>
 </form>
-
 
 <table>
     <thead>
@@ -21,37 +28,21 @@
         </tr>
     </thead>
     <tbody>
-        {% for character in characters %}
-        <tr>
-            <td>{{ character.name }}</td>
-            <td>{{ character.caste }}</td>
-            <td>{{ character.descriptor }}</td>
-            <td>{{ character.gift }}</td>
-            <td>
-                <a href="/characters/{{ character.id }}/edit">Edit</a>
-                <a href="/characters/{{ character.id }}">View</a>
-            </td>
-        </tr>
-        {% endfor %}
+        {% include 'partials/rows.html' %}
         {% if characters|length == 10 %}
             <tr>
                 <td colspan="5" style="text-align: center">
-                    <button hx-target="closest tr"
+                    <span hx-target="closest tr"
+                            hx-trigger="revealed"
                             hx-swap="outerHTML"
                             hx-select="tbody > tr"
                             hx-get="/characters?page={{ page + 1 }}">
-                        Load More
-                    </button>
+                        Loading more...
+                    </span>
                 </td>
             </tr>
         {% endif %}
     </tbody>
 </table>
-
-
-
-<p>
-    <a href="/characters/new">Create Character</a>
-</p>
 
 {% endblock %}
