@@ -1,4 +1,5 @@
 import json
+import random
 
 PAGE_SIZE = 10
 ALIVE = ["alive", None]
@@ -12,19 +13,30 @@ class Character:
                         name=None,
                         occupation=None,
                         debt=None,
+                        str=0,
+                        dex=0,
+                        cha=0,
                         inventory=None,
                         oddity_1=None,
                         oddity_2=None,
-                        player=None):
+                        player=None,
+                        status=None):
         self.id = id
         self.name = name
         self.occupation = occupation
         self.debt = debt
+        if str == 0 or dex == 0 or cha ==0:
+            self.str, self.dex, self.cha = Character.randomStats()
+        else:
+            self.str, self.dex, self.cha = str, dex, cha
         self.inventory = inventory
         self.oddity_1 = oddity_1
         self.oddity_2 = oddity_2
         self.player = player
-        self.status = ALIVE
+        if status is None:
+            self.status = ALIVE
+        else:
+            self.status = status
         self.errors = {}
 
     def delete(self):
@@ -33,6 +45,8 @@ class Character:
 
     def save(self):
         if not self.validate():
+            print("not valid")
+            print(self.errors)
             return False
         if self.id is None:
             if len(Character.db) == 0:
@@ -47,6 +61,9 @@ class Character:
     def update(self,    name,
                         occupation,
                         debt,
+                        str,
+                        dex,
+                        cha,
                         inventory,
                         oddity_1,
                         oddity_2,
@@ -55,10 +72,15 @@ class Character:
         self.name = name
         self.occupation = occupation
         self.debt = debt
+        self.str = str
+        self.dex = dex
+        self.cha = cha
+        self.inventory = inventory
         self.oddity_1 = oddity_1
         self.oddity_2 = oddity_2
         self.player = player
-        self.status = status
+        if status is not None:
+            self.status = status
 
     def validate(self):
         self.errors = {}
@@ -73,6 +95,7 @@ class Character:
         if not self.player:
             self.errors['player'] = "This would be you..."
         if not self.status:
+            print(self.status)
             self.errors['status'] = "Current status required"
         return len(self.errors) == 0
     
@@ -90,6 +113,13 @@ class Character:
         if c is not None:
             c.errors = {}
         return c
+
+    @staticmethod
+    def randomStats():
+        str = random.randint(1,6) + random.randint(1,6) + random.randint(1,6)
+        dex = random.randint(1,6) + random.randint(1,6) + random.randint(1,6)
+        cha = random.randint(1,6) + random.randint(1,6) + random.randint(1,6)
+        return str, dex, cha
 
     @classmethod    
     def search(cls, search_term):
@@ -121,11 +151,15 @@ class Character:
                 cls.db[c['id']] = Character(c['id'], 
                                             c['name'], 
                                             c['occupation'], 
-                                            c['debt'], 
+                                            c['debt'],
+                                            c['str'],
+                                            c['dex'],
+                                            c['cha'],
                                             c['inventory'],
                                             c['oddity_1'],
                                             c['oddity_2'],
-                                            c['player'])
+                                            c['player'],
+                                            c['status'])
 
     @staticmethod
     def save_db():

@@ -1,4 +1,5 @@
 {% extends 'layout.html' %}
+
 {% block content %}
 
 <form action="/characters/new" method="post">
@@ -7,43 +8,119 @@
         <legend>Character Values</legend>
         <div class="table rows">
             <p>
-                <label for="gift">Gift</label>
-                <input  name="gift" 
-                        id="gift" 
-                        type="text"
-                        placeholder="Gift" 
-                        value="{{ character.gift or '' }}">
-                <span class="error">{{ character.errors['gift'] }}</span>
-            </p>
-            <p>
                 <label for="name">Name</label>
                 <input  name="name"
                         id="name"
                         type="text"
                         hx-get="/characters/new/name"
                         hx-target="next .error"
-                        hx-trigger="keyup changed delay:250ms"
+                        hx-trigger="change, keyup changed delay:250ms"
                         placeholder="Name"
                         value="{{ character.name or ''}}">
                 <span class="error">{{ character.errors['name'] }}</span>
             </p>
             <p>
-                <label for="caste">Caste</label>
-                <input  name="caste"
-                        id="caste"
+                <label for="occupation_title">Occupation</label>
+                <input  name="occupation_title"
+                        id="occupation_title"
                         type="text"
-                        placeholder="Caste"
-                        value="{{ character.caste or '' }}">
-                <span class="error">{{ character.errors['caste'] }}</span>
+                        placeholder="Occupation Title"
+                        value="{{ character.occupation[0] or none}}">
+                <span class="error">{{ character.errors['occupation[0]'] }}</span>
             </p>
             <p>
-                <label for="descriptor">Descriptor</label>
-                <input  name="descriptor"
-                        id="descriptor"
+                <label for="occupation_desc">Occupation Description</label>
+                <input  name="occupation_desc"
+                        id="occupation_desc"
                         type="text"
-                        placeholder="Descriptor"
-                        value="{{ character.descriptor or '' }}">
-                <span class="error">{{ character.errors['descriptor'] }}</span>
+                        placeholder="Occupation Description"
+                        value="{{ character.occupation[1] or none }}">
+                <span class="error">{{ character.errors['occupation[1]'] }}</span>
+            </p>
+            <p>
+                <label for="player">Player Name</label>
+                {{ character.status[0] }} - <input  name="player"
+                                                    id="player"
+                                                    type="text"
+                                                    placeholder="Player Name"
+                                                    value="{{ character.player or none }}">
+                <span class="error">{{ character.errors['player'] }}</span>
+            </p>
+
+            <p>
+                <label for="str">Strength</label>
+                <input  name="str"
+                        id="str"
+                        type="number"
+                        placeholder="3"
+                        value="{{ character.str or none}}">
+                <span class="error">{{ character.errors['str'] }}</span>
+            </p>
+            <p>
+                <label for="dex">Dexterity</label>
+                <input  name="dex"
+                        id="dex"
+                        type="number"
+                        placeholder="3"
+                        value="{{ character.dex or none}}">
+                <span class="error">{{ character.errors['dex'] }}</span>
+            </p>
+            <p>
+                <label for="cha">Charisma</label>
+                <input  name="cha"
+                        id="cha"
+                        type="number"
+                        placeholder="3"
+                        value="{{ character.cha or none}}">
+                <span class="error">{{ character.errors['cha'] }}</span>
+            </p>
+
+            <p>
+                <label for="inventory">Inventory</label>
+                <input  name="inventory"
+                        id="inventory"
+                        type="text"
+                        placeholder="Empty"
+                        value="{{ character.inventory or none}}">
+                <span class="error">{{ character.errors['inventory'] }}</span>
+            </p>
+
+            <p>
+                <label for="oddity_1_question">First Question</label>
+                <input  name="oddity_1_question"
+                        id="oddity_1_question"
+                        type="text"
+                        placeholder="WHAT... is your quest?"
+                        value="{{ character.oddity_1[0] or none}}">
+                <span class="error">{{ character.errors['oddity_1_question'] }}</span>
+            </p>
+            <p>
+                <label for="oddity_1_response">First Answer</label>
+                <input  name="oddity_1_response"
+                        id="oddity_1_response"
+                        type="text"
+                        placeholder="To seek the Holy Grail!"
+                        value="{{ character.oddity_1[1] or none}}">
+                <span class="error">{{ character.errors['oddity_1_response'] }}</span>
+            </p>
+
+            <p>
+                <label for="oddity_2_question">Second Question</label>
+                <input  name="oddity_2_question"
+                        id="oddity_2_question"
+                        type="text"
+                        placeholder="WHAT... is your favorite color?"
+                        value="{{ character.oddity_2[0] or none}}">
+                <span class="error">{{ character.errors['oddity_2_question'] }}</span>
+            </p>
+            <p>
+                <label for="oddity_2_response">Second Answer</label>
+                <input  name="oddity_2_response"
+                        id="oddity_2_response"
+                        type="text"
+                        placeholder="Blue!"
+                        value="{{ character.oddity_2[1] or none }}">
+                <span class="error">{{ character.errors['oddity_2_response'] }}</span>
             </p>
         </div>
         <button>Save</button>

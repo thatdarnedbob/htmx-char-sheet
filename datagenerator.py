@@ -2,7 +2,7 @@ from character_model import Character
 import random
 
 NUM_OCCUPATIONS = 108
-NUM_CHARACTERS = 450
+NUM_CHARACTERS = 12
 OCCUPATION_OFFSET = 27
 OO = OCCUPATION_OFFSET
 
@@ -25,7 +25,7 @@ def randomCharacter():
 
 def grabName(base):
     names = secret_text[base * OO + 3].split(': ', maxsplit=1)[1]
-    names = names.rstrip('.')
+    names = names.replace('.', '')
     names = names.split(', ')
     return random.choice(names).capitalize().rstrip()
 
@@ -49,12 +49,17 @@ def grabOddity2(base):
     return [secret_text[base * OO + 19].rstrip(),
             secret_text[base * OO + 20 + choice][4:].rstrip()]
 
-Character.db.clear()
+def newBatch():
 
-for i in range(NUM_CHARACTERS):
-    r = randomCharacter()
-    if not r.validate():
-        raise Exception(r.errors)
-    r.save()
+    Character.db.clear()
 
-Character.save_db()
+    for i in range(NUM_CHARACTERS):
+        r = randomCharacter()
+        if not r.validate():
+            raise Exception(r.errors)
+        r.save()
+
+    Character.save_db()
+
+if __name__ == "__main__":
+    newBatch()

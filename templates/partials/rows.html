@@ -1,9 +1,9 @@
 {% for character in characters %}
     <tr>
         <td>{{ character.name }}</td>
-        <td>{{ character.caste }}</td>
-        <td>{{ character.descriptor }}</td>
-        <td>{{ character.gift }}</td>
+        <td>{{ character.occupation[0] }}</td>
+        <td>{{ character.status[0] }}</td>
+        <td>{{ character.player }}</td>
         <td>
             <a href="/characters/{{ character.id }}/edit">Edit</a>
             <a href="/characters/{{ character.id }}">View</a>

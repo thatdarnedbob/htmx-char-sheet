@@ -1,5 +1,6 @@
 from flask import flash, Flask, redirect, render_template, request
 from character_model import Character
+import datagenerator
 
 Character.load_db()
 
@@ -28,15 +29,22 @@ def characters():
 
 @app.route("/characters/new", methods=['GET'])
 def characters_new_get():
-    return render_template("new.html", character=Character())
+    return render_template("new.html", character=datagenerator.randomCharacter())
 
 @app.route("/characters/new", methods=['POST'])
 def characters_new_post():
-    c = Character(  None,
-                    request.form['name'],
-                    request.form['caste'],
-                    request.form['descriptor'],
-                    request.form['gift'])
+    c = Character(  id=None,
+                    name=request.form['name'],
+                    occupation=[request.form['occupation_title'], request.form['occupation_desc']],
+                    debt=None,
+                    str=request.form['str'],
+                    dex=request.form['dex'],
+                    cha=request.form['cha'],
+                    inventory=request.form['inventory'],
+                    oddity_1=[request.form['oddity_1_question'], request.form['oddity_1_response']],
+                    oddity_2=[request.form['oddity_2_question'], request.form['oddity_2_response']],
+                    player=request.form['player'],
+                    status=None)
     if c.save():
         flash("Created new character!")
         return redirect("/characters")
@@ -56,10 +64,17 @@ def character_edit_get(id=0):
 @app.route("/characters/<id>/edit", methods=['POST'])
 def character_edit_post(id=0):
     c = Character.find(id)
-    c.update(request.form['name'],
-             request.form['caste'],
-             request.form['descriptor'],
-             request.form['gift'])
+    c.update(   name=request.form['name'],
+                occupation=[request.form['occupation_title'], request.form['occupation_desc']],
+                debt=None,
+                str=request.form['str'],
+                dex=request.form['dex'],
+                cha=request.form['cha'],
+                inventory=request.form['inventory'],
+                oddity_1=[request.form['oddity_1_question'], request.form['oddity_1_response']],
+                oddity_2=[request.form['oddity_2_question'], request.form['oddity_2_response']],
+                player=request.form['player'],
+                status=None)
     if c.save():
         flash("Updated character!")
         return redirect("/characters/" + str(id) )
