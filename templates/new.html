@@ -12,47 +12,56 @@
                 <input  name="name"
                         id="name"
                         type="text"
-                        hx-get="/characters/new/name"
-                        hx-target="next .error"
-                        hx-trigger="change, keyup changed delay:250ms"
                         placeholder="Name"
                         value="{{ character.name or ''}}">
                 <span class="error">{{ character.errors['name'] }}</span>
+            </p>
+            <p>
+                <label for="player">Player Name</label>
+                <input  name="player"
+                        id="player"
+                        type="text"
+                        placeholder="Player Name"
+                        value="{{ character.player or none }}">
+                <span class="error">{{ character.errors['player'] }}</span>
+            </p>
+            <p>
+                <label for="status">Character Status</label>
+                <input  name="status"
+                        id="status"
+                        type="text"
+                        placeholder="Status"
+                        value="{{ character.status[0] }}"
+                        readonly>
+                <span class="error">{{ character.errors['player'] }}</span>
             </p>
             <p>
                 <label for="occupation_title">Occupation</label>
                 <input  name="occupation_title"
                         id="occupation_title"
                         type="text"
+                        size="40"
                         placeholder="Occupation Title"
                         value="{{ character.occupation[0] or none}}">
                 <span class="error">{{ character.errors['occupation[0]'] }}</span>
             </p>
             <p>
                 <label for="occupation_desc">Occupation Description</label>
-                <input  name="occupation_desc"
-                        id="occupation_desc"
-                        type="text"
-                        placeholder="Occupation Description"
-                        value="{{ character.occupation[1] or none }}">
+                <textarea   name="occupation_desc"
+                            id="occupation_desc"
+                            rows="3"
+                            cols="40"
+                            placeholder="Occupation Description">{{ character.occupation[1] or none }}</textarea>
                 <span class="error">{{ character.errors['occupation[1]'] }}</span>
             </p>
-            <p>
-                <label for="player">Player Name</label>
-                {{ character.status[0] }} - <input  name="player"
-                                                    id="player"
-                                                    type="text"
-                                                    placeholder="Player Name"
-                                                    value="{{ character.player or none }}">
-                <span class="error">{{ character.errors['player'] }}</span>
-            </p>
-
             <p>
                 <label for="str">Strength</label>
                 <input  name="str"
                         id="str"
                         type="number"
                         placeholder="3"
+                        min="3"
+                        max="18"
                         value="{{ character.str or none}}"
                         readonly>
                 <span class="error">{{ character.errors['str'] }}</span>
@@ -63,6 +72,8 @@
                         id="dex"
                         type="number"
                         placeholder="3"
+                        min="3"
+                        max="18"
                         value="{{ character.dex or none}}"
                         readonly>
                 <span class="error">{{ character.errors['dex'] }}</span>
@@ -73,6 +84,8 @@
                         id="cha"
                         type="number"
                         placeholder="3"
+                        min="3"
+                        max="18"
                         value="{{ character.cha or none}}"
                         readonly>
                 <span class="error">{{ character.errors['cha'] }}</span>
@@ -80,49 +93,47 @@
 
             <p>
                 <label for="inventory">Inventory</label>
-                <input  name="inventory"
-                        id="inventory"
-                        type="text"
-                        placeholder="Empty"
-                        value="{{ character.inventory or none}}">
+                <textarea   name="inventory"
+                            id="inventory"
+                            rows="3"
+                            cols="40"
+                            placeholder="Empty">{{ character.inventory or none}}</textarea>
                 <span class="error">{{ character.errors['inventory'] }}</span>
             </p>
 
             <p>
                 <label for="oddity_1_question">First Question</label>
-                <input  name="oddity_1_question"
-                        id="oddity_1_question"
-                        type="text"
-                        placeholder="WHAT... is your quest?"
-                        value="{{ character.oddity_1[0] or none}}">
+                <textarea   name="oddity_1_question"
+                            id="oddity_1_question"
+                            rows="2"
+                            cols="40">{{ character.oddity_1[0] or none}}</textarea>
                 <span class="error">{{ character.errors['oddity_1_question'] }}</span>
             </p>
             <p>
                 <label for="oddity_1_response">First Answer</label>
-                <input  name="oddity_1_response"
-                        id="oddity_1_response"
-                        type="text"
-                        placeholder="To seek the Holy Grail!"
-                        value="{{ character.oddity_1[1] or none}}">
+                <textarea   name="oddity_1_response"
+                            id="oddity_1_response"
+                            placeholder="{{ character.oddity_1[1] or none}}"
+                            rows="5"
+                            cols="40">{{ character.oddity_1[1] or none}}</textarea>
                 <span class="error">{{ character.errors['oddity_1_response'] }}</span>
             </p>
 
             <p>
                 <label for="oddity_2_question">Second Question</label>
-                <input  name="oddity_2_question"
-                        id="oddity_2_question"
-                        type="text"
-                        placeholder="WHAT... is your favorite color?"
-                        value="{{ character.oddity_2[0] or none}}">
+                <textarea   name="oddity_2_question"
+                            id="oddity_2_question"
+                            rows="2"
+                            cols="40">{{ character.oddity_2[0] or none}}</textarea>
                 <span class="error">{{ character.errors['oddity_2_question'] }}</span>
             </p>
             <p>
                 <label for="oddity_2_response">Second Answer</label>
-                <input  name="oddity_2_response"
-                        id="oddity_2_response"
-                        type="text"
-                        placeholder="Blue!"
-                        value="{{ character.oddity_2[1] or none }}">
+                <textarea   name="oddity_2_response"
+                            id="oddity_2_response"
+                            placeholder="{{ character.oddity_2[1] or none }}"
+                            rows="5"
+                            cols="40">{{ character.oddity_2[1] or none }}</textarea>
                 <span class="error">{{ character.errors['oddity_2_response'] }}</span>
             </p>
         </div>

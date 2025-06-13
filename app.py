@@ -1,5 +1,5 @@
 from flask import flash, Flask, redirect, render_template, request
-from character_model import Character
+from character_model import Character, ALIVE, DEAD
 import datagenerator
 from paths_test import SECRET_KEY
 
@@ -98,7 +98,15 @@ def character_name_check():
 def character_delete(id=0):
     character = Character.find(id)
     character.delete()
-    flash("Deleted Character!")
+    flash("Deleted character!")
+    return redirect("/characters", 303)
+
+@app.route("/characters/<id>/kill", methods=['POST'])
+def character_kill(id=0):
+    character = Character.find(id)
+    character.status[0] = DEAD[0]
+    Character.save_db()
+    flash("Killed character!")
     return redirect("/characters", 303)
 
 if __name__ == '__main__':

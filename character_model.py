@@ -4,8 +4,8 @@ from paths_test import JSON_LOC
 
 
 PAGE_SIZE = 10
-ALIVE = ["alive", None]
-DEAD = ["dead", None]
+ALIVE = ["Alive", None]
+DEAD = ["Dead", None]
 
 class Character:
 
