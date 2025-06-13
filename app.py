@@ -12,7 +12,7 @@ with open(SECRET_KEY, "r") as f:
 
 @app.route("/")
 def index():
-    return redirect("/characters")
+    return render_template('front.html')
 
 @app.route("/characters")
 def characters():

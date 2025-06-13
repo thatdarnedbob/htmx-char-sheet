@@ -1,16 +1,14 @@
 # My TO-DO list
 
-get synced with python anywhere, make paths variable
-
-REDO app hooks for full functionality
-
-index hook - serve option to view character list, or create new character
+Add HP
 
 Make new, edit, more interface friendly
 
 /characters/\<id\>/name
+Name check from edit, plus:
 
 /characters/new/name
+Name check from new: should it check rest of character?
 
 New Character page with htmx "pop in" functionality
 

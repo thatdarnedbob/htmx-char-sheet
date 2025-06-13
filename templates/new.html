@@ -53,7 +53,8 @@
                         id="str"
                         type="number"
                         placeholder="3"
-                        value="{{ character.str or none}}">
+                        value="{{ character.str or none}}"
+                        readonly>
                 <span class="error">{{ character.errors['str'] }}</span>
             </p>
             <p>
@@ -62,7 +63,8 @@
                         id="dex"
                         type="number"
                         placeholder="3"
-                        value="{{ character.dex or none}}">
+                        value="{{ character.dex or none}}"
+                        readonly>
                 <span class="error">{{ character.errors['dex'] }}</span>
             </p>
             <p>
@@ -71,7 +73,8 @@
                         id="cha"
                         type="number"
                         placeholder="3"
-                        value="{{ character.cha or none}}">
+                        value="{{ character.cha or none}}"
+                        readonly>
                 <span class="error">{{ character.errors['cha'] }}</span>
             </p>
 
