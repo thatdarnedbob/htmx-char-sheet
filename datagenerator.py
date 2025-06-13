@@ -1,5 +1,6 @@
 from character_model import Character
 import random
+from paths_test import EB_SOURCE
 
 NUM_OCCUPATIONS = 108
 NUM_CHARACTERS = 12
@@ -8,7 +9,7 @@ OO = OCCUPATION_OFFSET
 
 secret_text = ''
 
-with open('eb.txt', 'r') as f:
+with open(EB_SOURCE, 'r') as f:
     secret_text = f.readlines()
 
 def randomCharacter():

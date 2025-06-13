@@ -1,5 +1,7 @@
 import json
 import random
+from paths_test import JSON_LOC
+
 
 PAGE_SIZE = 10
 ALIVE = ["alive", None]
@@ -144,7 +146,7 @@ class Character:
 
     @classmethod
     def load_db(cls):
-        with open("characters.json", "r") as character_file:
+        with open(JSON_LOC, "r") as character_file:
             characters = json.load(character_file)
             cls.db.clear()
             for c in characters:
@@ -164,5 +166,5 @@ class Character:
     @staticmethod
     def save_db():
         out_arr = [c.__dict__ for c in Character.db.values()]
-        with open("characters.json", "w") as f:
+        with open(JSON_LOC, "w") as f:
             json.dump(out_arr, f, indent=2)

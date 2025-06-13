@@ -1,5 +1,7 @@
 # My TO-DO list
 
+get synced with python anywhere, make paths variable
+
 REDO app hooks for full functionality
 
 index hook - serve option to view character list, or create new character
@@ -23,3 +25,5 @@ implement conditional debt
 add "cheaty" easter egg to stats
 
 add HP
+
+figure out ascii encodings of pound online

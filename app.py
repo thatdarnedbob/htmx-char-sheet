@@ -1,15 +1,14 @@
 from flask import flash, Flask, redirect, render_template, request
 from character_model import Character
 import datagenerator
+from paths_test import SECRET_KEY
 
 Character.load_db()
 
 app = Flask(__name__)
 
-with open("secretkey.txt", "r") as f:
+with open(SECRET_KEY, "r") as f:
     app.secret_key = f.readlines()[0]
-
-print("started!")
 
 @app.route("/")
 def index():
@@ -102,4 +101,5 @@ def character_delete(id=0):
     flash("Deleted Character!")
     return redirect("/characters", 303)
 
-app.run()
+if __name__ == '__main__':
+    app.run()
