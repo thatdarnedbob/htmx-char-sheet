@@ -28,27 +28,31 @@ def characters():
 
 @app.route("/characters/new", methods=['GET'])
 def characters_new_get():
-    return render_template("new.html", character=datagenerator.randomCharacter())
+    character = datagenerator.randomCharacter()
+    if character.save():
+        flash("Created new character!")
+    return render_template("new.html", character=character)
 
 @app.route("/characters/new", methods=['POST'])
 def characters_new_post():
-    c = Character(  id=None,
-                    name=request.form['name'],
-                    occupation=[request.form['occupation_title'], request.form['occupation_desc']],
-                    debt=None,
-                    str=request.form['str'],
-                    dex=request.form['dex'],
-                    cha=request.form['cha'],
-                    inventory=request.form['inventory'],
-                    oddity_1=[request.form['oddity_1_question'], request.form['oddity_1_response']],
-                    oddity_2=[request.form['oddity_2_question'], request.form['oddity_2_response']],
-                    player=request.form['player'],
-                    status=None)
-    if c.save():
+    character = Character.find(request.form['id'])
+    character.update(name=request.form['name'],
+                        occupation=character.occupation,
+                        debt=character.debt,
+                        hp=character.hp,
+                        str=character.str,
+                        dex=character.dex,
+                        cha=character.cha,
+                        inventory=request.form['inventory'],
+                        oddity_1=[character.oddity_1[0], request.form['oddity_1_response']],
+                        oddity_2=[character.oddity_2[0], request.form['oddity_2_response']],
+                        player=request.form['player'],
+                        status=ALIVE)
+    if character.save():
         flash("Created new character!")
         return redirect("/characters")
     else:
-        return render_template("new.html", character=c)
+        return render_template("new.html", character=character)
     
 @app.route("/characters/<id>")
 def character_view(id=0):
@@ -66,6 +70,7 @@ def character_edit_post(id=0):
     c.update(   name=request.form['name'],
                 occupation=[request.form['occupation_title'], request.form['occupation_desc']],
                 debt=None,
+                hp=request.form['hp'],
                 str=request.form['str'],
                 dex=request.form['dex'],
                 cha=request.form['cha'],
@@ -101,12 +106,18 @@ def character_delete(id=0):
     flash("Deleted character!")
     return redirect("/characters", 303)
 
-@app.route("/characters/<id>/kill", methods=['POST'])
-def character_kill(id=0):
+@app.route("/characters/<id>/kill", methods=['GET'])
+def character_request_death_info(id=0):
     character = Character.find(id)
     character.status[0] = DEAD[0]
     Character.save_db()
-    flash("Killed character!")
+    return render_template("death.html", character=character)
+
+@app.route("/characters/<id>/kill", methods=['POST'])
+def character_kill(id=0):
+    character = Character.find(id)
+    character.status[1] = request.form['cause_of_death']
+    Character.save_db()
     return redirect("/characters", 303)
 
 if __name__ == '__main__':

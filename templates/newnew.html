@@ -2,26 +2,23 @@
 
 {% block content %}
 
-<h4>{{ character.name }} - {{ character.occupation[0] }}</h4>
-<h5>{{ character.occupation[1] }}</h5>
-<h4>Played by {{ character.player }}</h4>
-<p>Current status: {{ character.status[0] }}.
+<h1>{{ character.name }} - {{ character.occupation[0] }}</h1>
+<h2>{{ character.occupation[1] }}</h2>
+<h2>Played by {{ character.player }}</h2>
+<h2>{{ character.status[0] }}</h2>
 {% if character.status[1] %}
-{{ character.status[1] }}
+<h3>{{ character.status[1] }}</h3>
 {% endif %}
-</p>
 <table>
     <tr>
-        <th>Strength</th>
-        <th>Dexterity</th>
-        <th>Charisma</th>
-        <th>Hit Points</th>
+        <th>STR</th>
+        <th>DEX</th>
+        <th>CHA</th>
     </tr>
     <tr>
         <td>{{ character.str }}</td>
         <td>{{ character.dex }}</td>
         <td>{{ character.cha }}</td>
-        <td>{{ character.hp }}</td>
     </tr>
 </table>
 <div>

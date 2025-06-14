@@ -90,6 +90,18 @@
                         readonly>
                 <span class="error">{{ character.errors['cha'] }}</span>
             </p>
+            <p>
+                <label for="hp">Hit Points</label>
+                <input  name="hp"
+                        id="hp"
+                        type="number"
+                        placeholder="1"
+                        min="1"
+                        max="18"
+                        value="{{ character.hp or none}}"
+                        readonly>
+                <span class="error">{{ character.errors['hp'] }}</span>
+            </p>
 
             <p>
                 <label for="inventory">Inventory</label>
@@ -141,18 +153,20 @@
     </fieldset>
 </form>
 
-<button hx-delete="/characters/{{ character.id }}"
+<p>
+    <button hx-get="/characters"
+            hx-push-url="true"
+            hx-target="body">Back to list</button>
+    {% if character.status[0] == "Alive" %}
+    <button hx-get="/characters/{{ character.id }}/kill"
+            hx-push-url="true"
+            hx-confirm="Actually kill this character?"
+            hx-target="body">Kill Character</button>
+    {% endif %}
+    <button hx-delete="/characters/{{ character.id }}"
         hx-push-url="true"
         hx-confirm="Actually delete this character?"
         hx-target="body">Delete Character</button>
-
-<button hx-post="/characters/{{ character.id }}/kill"
-        hx-push-url="true"
-        hx-confirm="Actually kill this character?"
-        hx-target="body">Kill Character</button>
-
-<p>
-    <a href="/characters">Back</a>
-</p>
+</p> 
 
 {% endblock %}

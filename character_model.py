@@ -15,6 +15,7 @@ class Character:
                         name=None,
                         occupation=None,
                         debt=None,
+                        hp=0,
                         str=0,
                         dex=0,
                         cha=0,
@@ -27,6 +28,10 @@ class Character:
         self.name = name
         self.occupation = occupation
         self.debt = debt
+        if hp==0:
+            self.hp = random.randint(1,6)
+        else:
+            self.hp = hp
         if str == 0 or dex == 0 or cha ==0:
             self.str, self.dex, self.cha = Character.randomStats()
         else:
@@ -63,6 +68,7 @@ class Character:
     def update(self,    name,
                         occupation,
                         debt,
+                        hp,
                         str,
                         dex,
                         cha,
@@ -74,6 +80,7 @@ class Character:
         self.name = name
         self.occupation = occupation
         self.debt = debt
+        self.hp = hp
         self.str = str
         self.dex = dex
         self.cha = cha
@@ -154,6 +161,7 @@ class Character:
                                             c['name'], 
                                             c['occupation'], 
                                             c['debt'],
+                                            c['hp'],
                                             c['str'],
                                             c['dex'],
                                             c['cha'],

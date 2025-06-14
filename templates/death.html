@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<p>
+    Oh no! We were really hoping that {{ character.name }} would make it out.
+</p>
+<p>
+    What were the circumstances of their death?
+</p>
+<form action="/characters/{{ character.id }}/kill" method="post">
+    <fieldset>
+        <div class="table rows">
+            <p>
+                <label for="cause_of_death">Cause of Death</label>
+                <textarea   name="cause_of_death"
+                            id="cause_of_death"
+                            placeholder="Heart Attack"
+                            rows="8"
+                            cols="40">{{ character.status[1] or none }}</textarea>
+                <span class="error">{{ character.errors['cause_of_death'] }}</span>
+            </p>
+            <p>
+                <input  name="id"
+                        id="id"
+                        type="hidden"
+                        placeholder="ID"
+                        value="{{ character.id }}">
+            </p>
+        </div>
+        <button>Submit</button>
+    </fieldset>
+
+</form>
+{% endblock %}

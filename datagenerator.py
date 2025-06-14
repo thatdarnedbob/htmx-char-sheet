@@ -28,10 +28,10 @@ def grabName(base):
     names = secret_text[base * OO + 3].split(': ', maxsplit=1)[1]
     names = names.replace('.', '')
     names = names.split(', ')
-    return random.choice(names).capitalize().rstrip()
+    return random.choice(names).title().rstrip()
 
 def grabOccupation(base):
-    return [secret_text[base * OO].split('. ', maxsplit=1)[1].rstrip(),
+    return [secret_text[base * OO].split('. ', maxsplit=1)[1].rstrip().title(),
             secret_text[base * OO + 1].rstrip()]
     
 def grabDebt(base):

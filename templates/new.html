@@ -8,6 +8,7 @@
         <legend>Character Values</legend>
         <div class="table rows">
             <p>
+                <input type="hidden" name="id" id="id" value="{{ character.id }}">
                 <label for="name">Name</label>
                 <input  name="name"
                         id="name"
@@ -55,42 +56,50 @@
                 <span class="error">{{ character.errors['occupation[1]'] }}</span>
             </p>
             <p>
-                <label for="str">Strength</label>
-                <input  name="str"
-                        id="str"
-                        type="number"
-                        placeholder="3"
-                        min="3"
-                        max="18"
-                        value="{{ character.str or none}}"
-                        readonly>
-                <span class="error">{{ character.errors['str'] }}</span>
+                <label for="stats">Stats</label>
+                <table for="stats">
+                    <tr>
+                        <th><label for="str">Strength</label></th>
+                        <th><label for="dex">Dexterity</label></th>
+                        <th><label for="cha">Charisma</label></th>
+                        <th><label for="hp">Hit Points</label></th>
+                    </tr>
+                    <tr>
+                        <td><input  name="str"
+                            id="str"
+                            type="number"
+                            placeholder="3"
+                            min="3"
+                            max="18"
+                            value="{{ character.str or none}}"
+                            readonly></td>
+                        <td><input  name="dex"
+                            id="dex"
+                            type="number"
+                            placeholder="3"
+                            min="3"
+                            max="18"
+                            value="{{ character.dex or none}}"
+                            readonly></td>
+                        <td><input  name="cha"
+                            id="cha"
+                            type="number"
+                            placeholder="3"
+                            min="3"
+                            max="18"
+                            value="{{ character.cha or none}}"
+                            readonly></td>
+                        <td><input  name="hp"
+                            id="hp"
+                            type="number"
+                            placeholder="1"
+                            min="1"
+                            max="18"
+                            value="{{ character.hp or none}}"
+                            readonly></td>
+                    </tr>
+                </table>
             </p>
-            <p>
-                <label for="dex">Dexterity</label>
-                <input  name="dex"
-                        id="dex"
-                        type="number"
-                        placeholder="3"
-                        min="3"
-                        max="18"
-                        value="{{ character.dex or none}}"
-                        readonly>
-                <span class="error">{{ character.errors['dex'] }}</span>
-            </p>
-            <p>
-                <label for="cha">Charisma</label>
-                <input  name="cha"
-                        id="cha"
-                        type="number"
-                        placeholder="3"
-                        min="3"
-                        max="18"
-                        value="{{ character.cha or none}}"
-                        readonly>
-                <span class="error">{{ character.errors['cha'] }}</span>
-            </p>
-
             <p>
                 <label for="inventory">Inventory</label>
                 <textarea   name="inventory"
