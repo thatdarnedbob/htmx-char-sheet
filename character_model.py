@@ -77,6 +77,7 @@ class Character:
                         oddity_2,
                         player,
                         status):
+        print('inside update')
         self.name = name
         self.occupation = occupation
         self.debt = debt

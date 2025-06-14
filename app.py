@@ -31,11 +31,14 @@ def characters_new_get():
     character = datagenerator.randomCharacter()
     if character.save():
         flash("Created new character!")
-    return render_template("new.html", character=character)
+    return render_template("newnew.html", character=character)
 
 @app.route("/characters/new", methods=['POST'])
 def characters_new_post():
+    print("saw new post")
+    print(request.form)
     character = Character.find(request.form['id'])
+    print('got to update')
     character.update(name=request.form['name'],
                         occupation=character.occupation,
                         debt=character.debt,
@@ -48,10 +51,13 @@ def characters_new_post():
                         oddity_2=[character.oddity_2[0], request.form['oddity_2_response']],
                         player=request.form['player'],
                         status=ALIVE)
+    print('got to conditional')
     if character.save():
+        print('did save')
         flash("Created new character!")
         return redirect("/characters")
     else:
+        print('did not save')
         return render_template("new.html", character=character)
     
 @app.route("/characters/<id>")

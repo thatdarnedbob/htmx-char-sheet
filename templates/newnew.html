@@ -1,52 +1,79 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-
-<h1>{{ character.name }} - {{ character.occupation[0] }}</h1>
-<h2>{{ character.occupation[1] }}</h2>
-<h2>Played by {{ character.player }}</h2>
-<h2>{{ character.status[0] }}</h2>
-{% if character.status[1] %}
-<h3>{{ character.status[1] }}</h3>
-{% endif %}
-<table>
-    <tr>
-        <th>STR</th>
-        <th>DEX</th>
-        <th>CHA</th>
-    </tr>
-    <tr>
-        <td>{{ character.str }}</td>
-        <td>{{ character.dex }}</td>
-        <td>{{ character.cha }}</td>
-    </tr>
-</table>
-<div>
-    <div>Inventory: {{ character.inventory }}</div>
-</div>
-<div>
-    <h4>{{ character.oddity_1[0] }}</h4>
-    <div>{{ character.oddity_1[1] }}</div>
-</div>
-<div>
-    <h4>{{ character.oddity_2[0] }}</h4>
-    <div>{{ character.oddity_2[1] }}</div>
-</div>
-
-
-<p>
-    <button hx-get="/characters/{{ character.id }}/edit"
-            hx-push-url="true"
-            hx-target="body">Edit Character</button>
-    <button hx-get="/characters"
-            hx-push-url="true"
-            hx-target="body">Back to list</button>
-    {% if character.status[0] == "Alive" %}
-    <button hx-get="/characters/{{ character.id }}/kill"
-            hx-push-url="true"
-            hx-confirm="Actually kill this character?"
-            hx-target="body">Kill Character</button>
-    {% endif %}
-</p> 
-
+<form action="/characters/new" method="post">
+<fieldset>
+    <h4><label for="name">Name</label>
+        <input  name="name"
+                id="name"
+                type="text"
+                placeholder="Name"
+                value="{{ character.name or ''}}"> </h4>
+    <h4>Failed Occupation - {{ character.occupation[0] }}</h4>
+    <h5>{{ character.occupation[1] }}</h5>
+    <p>
+        <label for="player">Player Name</label>
+        <input  name="player"
+                id="player"
+                type="text"
+                placeholder="Player Name"
+                value="{{ character.player or none }}">
+        <span class="error">{{ character.errors['player'] }}</span>
+        <input  name="id"
+                id="id"
+                type="hidden"
+                value="{{ character.id }}">
+    </p>
+    <p>Current status: {{ character.status[0] }}
+    </p>
+    <table>
+        <tr>
+            <th>Strength</th>
+            <th>Dexterity</th>
+            <th>Charisma</th>
+            <th>Hit Points</th>
+        </tr>
+        <tr>
+            <td>{{ character.str }}</td>
+            <td>{{ character.dex }}</td>
+            <td>{{ character.cha }}</td>
+            <td>{{ character.hp }}</td>
+        </tr>
+    </table>
+    <p>
+                <label for="inventory">Inventory</label>
+                <textarea   name="inventory"
+                            id="inventory"
+                            rows="3"
+                            cols="40"
+                            placeholder="Empty">{{ character.inventory or none}}</textarea>
+                <span class="error">{{ character.errors['inventory'] }}</span>
+            </p>
+    <div>
+        <h4>{{ character.oddity_1[0] }}</h4>
+        <p>
+            <label for="oddity_1_response">First Answer</label>
+            <textarea   name="oddity_1_response"
+                        id="oddity_1_response"
+                        placeholder="{{ character.oddity_1[1] or none}}"
+                        rows="5"
+                        cols="40">{{ character.oddity_1[1] or none}}</textarea>
+            <span class="error">{{ character.errors['oddity_1_response'] }}</span>
+        </p>
+    </div>
+    <div>
+        <h4>{{ character.oddity_2[0] }}</h4>
+        <p>
+            <label for="oddity_2_response">Second Answer</label>
+            <textarea   name="oddity_2_response"
+                        id="oddity_2_response"
+                        placeholder="{{ character.oddity_2[1] or none }}"
+                        rows="5"
+                        cols="40">{{ character.oddity_2[1] or none }}</textarea>
+            <span class="error">{{ character.errors['oddity_2_response'] }}</span>
+        </p>
+    </div>
+    <button>Save</button>
+</fieldset>
+</form>
 {% endblock %}
